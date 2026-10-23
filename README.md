@@ -11,12 +11,12 @@ then **learn from each other** in the **Συμπολιτεία**.
 ## The five stages
 
 | Stage | | |
-|---|---|---|
-| **Ήλιος** | Η Πολιτεία ξεκινά από εσένα. | The polity begins with you. |
-| **Γαία** | Ο τόπος σου, σε κάθε διάσταση. | Your place, in every dimension. |
-| **Δήμος** | Ο διάλογος γίνεται κοινή πράξη. | Dialogue becomes shared action. |
-| **Κύμα** | Η καθημερινότητα στο επίκεντρο. | Everyday life at the centre. |
-| **Νόησις** | Μια καλύτερη ισορροπία για όλους. | A better balance for everyone. |
+|:---:|---|---|
+| <img src="docs/stages/tetrahedron.svg" width="56" height="56" alt="Ήλιος" title="Ήλιος · Πυρ · Τετράεδρο"> | Η Πολιτεία ξεκινά από εσένα. | The polity begins with you. |
+| <img src="docs/stages/cube.svg" width="56" height="56" alt="Γαία" title="Γαία · Γη · Κύβος"> | Ο τόπος σου, σε κάθε διάσταση. | Your place, in every dimension. |
+| <img src="docs/stages/octahedron.svg" width="56" height="56" alt="Δήμος" title="Δήμος · Αήρ · Οκτάεδρο"> | Ο διάλογος γίνεται κοινή πράξη. | Dialogue becomes shared action. |
+| <img src="docs/stages/icosahedron.svg" width="56" height="56" alt="Κύμα" title="Κύμα · Ύδωρ · Εικοσάεδρο"> | Η καθημερινότητα στο επίκεντρο. | Everyday life at the centre. |
+| <img src="docs/stages/dodecahedron.svg" width="56" height="56" alt="Νόησις" title="Νόησις · Αιθήρ · Δωδεκάεδρο"> | Μια καλύτερη ισορροπία για όλους. | A better balance for everyone. |
 
 ## Your country, in your browser
 
