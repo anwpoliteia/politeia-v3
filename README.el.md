@@ -9,6 +9,16 @@
 
 *English: [README.md](README.md)*
 
+## Τα πέντε στάδια
+
+| Στάδιο | |
+|:---:|---|
+| <img src="docs/stages/tetrahedron.svg" width="56" height="56" alt="Ήλιος" title="Ήλιος · Πυρ · Τετράεδρο"> | Η Πολιτεία ξεκινά από εσένα. |
+| <img src="docs/stages/cube.svg" width="56" height="56" alt="Γαία" title="Γαία · Γη · Κύβος"> | Ο τόπος σου, σε κάθε διάσταση. |
+| <img src="docs/stages/octahedron.svg" width="56" height="56" alt="Δήμος" title="Δήμος · Αήρ · Οκτάεδρο"> | Ο διάλογος γίνεται κοινή πράξη. |
+| <img src="docs/stages/icosahedron.svg" width="56" height="56" alt="Κύμα" title="Κύμα · Ύδωρ · Εικοσάεδρο"> | Η καθημερινότητα στο επίκεντρο. |
+| <img src="docs/stages/dodecahedron.svg" width="56" height="56" alt="Νόησις" title="Νόησις · Αιθήρ · Δωδεκάεδρο"> | Μια καλύτερη ισορροπία για όλους. |
+
 ## Για τη χώρα σου, μέσα από τον browser
 
 Χωρίς εγκατάσταση, χωρίς κώδικα, χωρίς ΤΝ. Άνοιξε το **Country Studio** στο
