@@ -1,0 +1,214 @@
+{
+ "reviewedAt": "2026-10-23",
+ "total": 20,
+ "scopeReviewed": 20,
+ "mapped": 1,
+ "areaWide": 19,
+ "scopeCounts": {
+  "network-wide": 14,
+  "service-wide": 5,
+  "source-matched": 1
+ },
+ "records": [
+  {
+   "cityId": "city-2988507",
+   "slug": "cours-oasis",
+   "location": "Écoles parisiennes · programme cours Oasis",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le programme concerne de nombreuses écoles de la ville ; aucune cour particulière n'est épinglée."
+   }
+  },
+  {
+   "cityId": "city-2988507",
+   "slug": "rues-aux-ecoles",
+   "location": "Abords des écoles parisiennes",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le plan concerne des rues dans tout Paris ; aucune rue particulière n'est épinglée."
+   }
+  },
+  {
+   "cityId": "city-2988507",
+   "slug": "encadrement-loyers",
+   "location": "Paris · parc locatif privé",
+   "disposition": "service-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "La règle s'applique à toute la ville ; il n'y a pas de lieu unique à épingler."
+   }
+  },
+  {
+   "cityId": "city-2995469",
+   "slug": "plan-ecoles",
+   "location": "Écoles publiques de Marseille",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le plan concerne toutes les écoles publiques de la ville ; aucune école n'est épinglée."
+   }
+  },
+  {
+   "cityId": "city-2995469",
+   "slug": "habitat-indigne",
+   "location": "Noailles · haut de la rue d'Aubagne",
+   "disposition": "source-matched",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "La carte montre la rue d'Aubagne à Noailles, où se trouve le lieu ressources en mémoire du drame ; le dossier concerne aussi les autres périmètres prioritaires."
+   }
+  },
+  {
+   "cityId": "city-2996944",
+   "slug": "voies-lyonnaises",
+   "location": "Métropole de Lyon · 13 lignes cyclables",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne un réseau de lignes ; aucun tronçon n'est épinglé."
+   }
+  },
+  {
+   "cityId": "city-2996944",
+   "slug": "cours-nature",
+   "location": "Écoles et crèches lyonnaises",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le programme concerne de nombreux établissements ; aucun n'est épinglé."
+   }
+  },
+  {
+   "cityId": "city-2972315",
+   "slug": "ligne-c-metro",
+   "location": "Ligne C · de Colomiers à Labège",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne une ligne entière ; aucune station n'est épinglée."
+   }
+  },
+  {
+   "cityId": "city-2972315",
+   "slug": "reseau-express-velo",
+   "location": "Toulouse Métropole · 22 lignes vélo",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne un réseau ; aucun tronçon n'est épinglé."
+   }
+  },
+  {
+   "cityId": "city-2990440",
+   "slug": "renaturation-plaine-du-var",
+   "location": "Basse vallée du Var",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne toute la basse vallée ; aucune parcelle n'est épinglée."
+   }
+  },
+  {
+   "cityId": "city-2990969",
+   "slug": "logement-abordable",
+   "location": "Nantes Métropole · habitat",
+   "disposition": "service-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "La politique concerne toute la métropole ; il n'y a pas de lieu unique à épingler."
+   }
+  },
+  {
+   "cityId": "city-2992166",
+   "slug": "gratuite-transports",
+   "location": "Montpellier Méditerranée Métropole · réseau de transports",
+   "disposition": "service-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "La mesure concerne tout le réseau ; il n'y a pas de lieu unique à épingler."
+   }
+  },
+  {
+   "cityId": "city-2973783",
+   "slug": "zone-faibles-emissions",
+   "location": "Eurométropole de Strasbourg",
+   "disposition": "service-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "La zone couvre tout le territoire de l'Eurométropole ; il n'y a pas de lieu unique à épingler."
+   }
+  },
+  {
+   "cityId": "city-3031582",
+   "slug": "un-million-arbres",
+   "location": "Bordeaux Métropole",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Les plantations sont réparties sur toute la métropole ; aucun site n'est épinglé."
+   }
+  },
+  {
+   "cityId": "city-2998324",
+   "slug": "permis-de-louer",
+   "location": "Métropole européenne de Lille · 30 communes",
+   "disposition": "service-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dispositif s'applique à des secteurs de 30 communes ; il n'y a pas de lieu unique à épingler."
+   }
+  },
+  {
+   "cityId": "city-2983990",
+   "slug": "trambus",
+   "location": "Rennes Métropole · 4 lignes",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne quatre lignes ; aucune station n'est épinglée."
+   }
+  },
+  {
+   "cityId": "city-3003796",
+   "slug": "submersion-marine",
+   "location": "Plaine alluviale nord de l'estuaire de la Seine",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le plan couvre une large plaine littorale ; aucun lieu particulier n'est épinglé."
+   }
+  },
+  {
+   "cityId": "city-3021372",
+   "slug": "reseau-de-chaleur",
+   "location": "Dijon métropole · réseaux de chaleur",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne un réseau de canalisations ; aucun lieu n'est épinglé."
+   }
+  },
+  {
+   "cityId": "city-2972191",
+   "slug": "deuxieme-ligne-tram",
+   "location": "Ligne 2 · La Riche, Tours, Joué-lès-Tours, Chambray-lès-Tours",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne une ligne entière ; aucune station n'est épinglée."
+   }
+  },
+  {
+   "cityId": "city-3038334",
+   "slug": "risque-inondation",
+   "location": "Ajaccio · secteur des Cannes-Salines",
+   "disposition": "network-wide",
+   "review": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne plusieurs zones exposées ; aucun point n'est épinglé."
+   }
+  }
+ ]
+}

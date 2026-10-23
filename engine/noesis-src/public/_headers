@@ -1,0 +1,42 @@
+# Netlify security headers. This file is load-bearing: a drag-and-drop deploy of
+# dist/ does NOT include netlify.toml, so public/_headers (→ dist/_headers) is
+# what actually applies to the live site. Keep it in sync with netlify.toml.
+#
+# ⚠️  PRECEDENCE — Netlify _headers is LAST-MATCH-WINS, not most-specific-wins.
+# The catch-all /* must come FIRST; any narrower override (e.g. /nous2-app/*)
+# MUST come AFTER it, otherwise /* clobbers it. (Verified live 2026-07-30: with
+# /nous2-app/* placed before /*, the strict /* CSP won and NOUS 2.0 stayed a
+# blank navy screen — d3/three.js and its inline scripts were blocked.)
+#
+# The /* CSP is an allow-list of exactly what the main app loads; do not widen
+# it without reason:
+#   style 'unsafe-inline' — React/Tailwind element styles + KaTeX's <style>.
+#     Inline STYLE is not inline SCRIPT: script-src stays strict 'self'.
+#   fonts.googleapis / gstatic — the Cormorant/Inter/JetBrains webfonts.
+#   supabase.co — auth (connect-src only; never supplies scripts).
+#   railway.app — the Δελφοί oracle, embedded as an iframe (frame-src).
+#   frame-ancestors 'self' — nobody may frame ipoliteia.gr (anti-clickjacking).
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self' https://chikynaejxqahetwhemw.supabase.co https://diavgeia-watchdog-production.up.railway.app; frame-src 'self' https://diavgeia-watchdog-production.up.railway.app; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), interest-cohort=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin
+
+# NOUS 2.0 (public/nous2-app/) — a self-contained app: d3 + three.js from CDN, a
+# big inline <script>, and inline onclick handlers. It runs in an iframe
+# sandboxed WITHOUT allow-same-origin, so it lives in an opaque origin and cannot
+# reach this site's session/cookies — the sandbox, not the CSP, is its isolation
+# boundary, so this looser CSP cannot weaken the main site. Placed AFTER /* so
+# last-match-wins lets it override the strict policy for THIS path only.
+/nous2-app/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://d3js.org https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), interest-cohort=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin

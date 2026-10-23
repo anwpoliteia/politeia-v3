@@ -1,0 +1,30 @@
+/*! © 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ · ipoliteia.gr · SPDX-License-Identifier: AGPL-3.0-or-later · Κείμενα: CC BY-NC-ND 4.0 · Όνομα και Δωδεκάπλευρο: με επιφύλαξη παντός δικαιώματος · βλ. /COPYRIGHT.md */
+/* Shared evidence presentation across every Atlas interface. */
+.evidence-record{margin:24px 0;padding:20px;border:1px solid var(--line,#c9d1ce);border-radius:12px;background:var(--paper,#f8faf7)}
+.evidence-record-heading{display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-bottom:12px;color:var(--muted,#5c6c67);font-size:11px}
+.evidence-record-heading strong{color:var(--accent,#256550);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.evidence-record>p{font-size:14px;line-height:1.65}
+.evidence-location{font-size:12px!important;color:var(--muted,#5c6c67)}
+.evidence-sources{padding-left:20px;margin:16px 0}
+.evidence-sources li{padding:8px 0 8px 2px}
+.evidence-sources a{color:var(--ink,#193c30);font-weight:700;font-size:13px;overflow-wrap:anywhere;text-underline-offset:3px}
+.evidence-sources small{display:block;color:var(--muted,#5c6c67);font-size:11px;margin-top:5px;line-height:1.6}
+.source-locator{font-size:12px!important;color:var(--muted,#5c6c67);margin:5px 0!important}
+.evidence-action{border-top:1px solid var(--line,#c9d1ce);padding-top:15px;margin-top:12px}
+.evidence-action strong{font-size:12px;color:var(--accent,#256550)}
+.evidence-steps{margin:10px 0;padding-left:20px;font-size:13px;line-height:1.7}
+.evidence-steps li+li{margin-top:8px}
+.location-verification{border-left:3px solid var(--accent,#256550);padding:10px 14px;margin:14px 0;background:rgba(110,145,140,.07);font-size:12px;line-height:1.6}
+.location-verification p{margin:7px 0;font-size:12px!important}
+.location-verification a{display:inline-block;margin:4px 8px 4px 0}
+.location-verification small,.location-verification span{display:block;opacity:.8}
+.gaia-location-note{font-size:11px!important;line-height:1.5!important;opacity:.85}
+.city-context-marker{border:1px solid #acbcb3;background:#fff;color:#234e43;border-radius:20px;padding:8px 13px;font:600 12px sans-serif;cursor:pointer}
+[data-accuracy="area-reference"],[data-accuracy="registry-reference"],[data-accuracy="address-reference"]{border-style:dashed!important}
+.evidence-proposal-note{font-size:11px!important;color:var(--muted,#5c6c67);border-top:1px solid var(--line,#c9d1ce);padding-top:12px;margin-top:16px}
+.evidence-empty{padding:20px 0;font-size:14px;line-height:1.7}
+.coverage-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:20px 0}
+.coverage-grid a{display:flex;flex-direction:column;gap:6px;border:1px solid var(--line,#c9d1ce);border-radius:8px;padding:14px;text-decoration:none}
+.coverage-grid a:hover{border-color:var(--accent,#256550)}
+.coverage-grid span{font-size:12px;color:var(--muted,#5c6c67)}
+@media(max-width:600px){.evidence-record{padding:15px}.evidence-record-heading{display:block}.evidence-record-heading span{display:block;margin-top:6px}}

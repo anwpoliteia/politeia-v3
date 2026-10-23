@@ -1,0 +1,46 @@
+/*! © 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ · ipoliteia.gr · SPDX-License-Identifier: AGPL-3.0-or-later · Κείμενα: CC BY-NC-ND 4.0 · Όνομα και Δωδεκάπλευρο: με επιφύλαξη παντός δικαιώματος · βλ. /COPYRIGHT.md */
+/* The five stages in the Διακήρυξη hero (stages-hero.js), mirrored: text on the right, solid on the left by the equation. The window starts at the centre of the
+   hero and runs to its right edge, from the eyebrow down to the buttons; the hero's own text and
+   equation keep their places above it. Colours and type are the app's own tokens. */
+.stages-host { position: relative; }
+.stages-host > :not(.stages-hero) { position: relative; z-index: 1; }
+.stages-hero {
+  position: relative; z-index: 0; margin-top: 40px; height: 500px; overflow: hidden; cursor: pointer;
+  border-radius: 6px;
+  background: linear-gradient(180deg, var(--color-elev, #11151e), rgba(11, 14, 20, 0) 85%);
+}
+/* The frame, drawn apart so its left edge can fade out where the hero's lede passes over it. */
+.stages-hero::before {
+  content: ""; position: absolute; inset: 0; border: 1px solid var(--color-line, #1e2530); border-radius: inherit; pointer-events: none;
+  -webkit-mask: linear-gradient(#000, #000) right / calc(100% - 48px) 100% no-repeat, linear-gradient(to bottom, #000 var(--fade-start, 100%), transparent var(--fade-end, 100%)) left / 48px 100% no-repeat;
+          mask: linear-gradient(#000, #000) right / calc(100% - 48px) 100% no-repeat, linear-gradient(to bottom, #000 var(--fade-start, 100%), transparent var(--fade-end, 100%)) left / 48px 100% no-repeat;
+}
+.stages-hero:focus-visible { outline: 2px solid var(--color-gold, #c8a24a); outline-offset: 3px; }
+@media (min-width: 1024px) {
+  .stages-hero { position: absolute; margin: 0; height: auto; left: 50%; top: var(--stages-top, 96px); bottom: var(--stages-bottom, 96px); right: var(--stages-right, 24px); }
+}
+.stages-hero canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.stages-caps { position: absolute; inset: 0; pointer-events: none; }
+.stages-cap { position: absolute; left: var(--cap-left, var(--g, 30px)); right: var(--g, 30px); top: var(--cap-top, 80px); display: grid; gap: 8px; text-align: right; opacity: 0; visibility: hidden; transition: opacity .6s ease, visibility 0s linear .6s; }
+.stages-cap.on { opacity: 1; visibility: visible; transition: opacity .9s ease .2s, visibility 0s; }
+.stages-cap.first { opacity: 1; visibility: visible; }
+.stages-cap .n { margin: 0; font: 500 12px/1.4 var(--font-mono, ui-monospace, monospace); letter-spacing: .14em; text-transform: uppercase; color: var(--color-muted, #8a93a2); }
+.stages-cap .n b { color: var(--color-gold, #c8a24a); font-weight: 500; }
+.stages-cap h3 { margin: 0; font: 600 20px/1.25 var(--font-sans, system-ui, sans-serif); color: var(--color-text, #ece7dd); }
+.stages-cap .m { margin: 0; font: 400 14px/1.45 var(--font-sans, system-ui, sans-serif); color: var(--color-gold, #c8a24a); }
+.stages-cap ul { margin: 4px 0 0; padding: 0; list-style: none; display: grid; gap: 6px; font: 400 13px/1.55 var(--font-sans, system-ui, sans-serif); color: var(--color-muted, #8a93a2); }
+.stages-cap li { display: grid; grid-template-columns: 1fr 14px; gap: 8px; opacity: 0; transition: opacity .7s ease; }
+.stages-cap li::after { content: ""; height: 1px; margin-top: .8em; background: var(--color-gold, #c8a24a); opacity: .55; }
+.stages-cap.on li { opacity: 1; }
+.stages-cap.on li:nth-child(1) { transition-delay: 1.2s; } .stages-cap.on li:nth-child(2) { transition-delay: 1.8s; } .stages-cap.on li:nth-child(3) { transition-delay: 2.4s; }
+.stages-progress { position: absolute; left: 0; bottom: 0; height: 1px; width: 0; background: var(--color-gold, #c8a24a); opacity: .6; }
+@media (prefers-reduced-motion: reduce) { .stages-cap, .stages-cap.on, .stages-cap li { transition: none !important; } }
+/* The hero's own type, 25% smaller beside the animation (equation, heading, lede, buttons).
+   Unlayered, so it wins over the app's layered utilities; only on /manifesto, where the window mounts. */
+.stages-host > .my-12 { font-size: 1.125rem; }
+@media (min-width: 640px) { .stages-host > .my-12 { font-size: 1.40625rem; } }
+@media (min-width: 768px) { .stages-host > .my-12 { font-size: 2.25rem; } }
+.stages-host > h1 { font-size: .9375rem; }
+@media (min-width: 768px) { .stages-host > h1 { font-size: 1.125rem; } }
+.stages-host > p.max-w-2xl { font-size: .84375rem; }
+.stages-host > .mt-8 a { font-size: .65625rem; }

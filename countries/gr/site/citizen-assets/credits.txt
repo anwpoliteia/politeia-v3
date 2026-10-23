@@ -1,0 +1,21 @@
+POLITEIA citizen concept collection — photograph credits
+
+athens.jpg — Georgios Giannopoulos / Ggia
+Acropolis panoramic view from Areopagus hill, Athens, Greece (2010).
+https://commons.wikimedia.org/wiki/File:20101024_Acropolis_panoramic_view_from_Areopagus_hill_Athens_Greece.jpg
+License: Creative Commons Attribution-ShareAlike 3.0
+https://creativecommons.org/licenses/by-sa/3.0/
+
+aegean.jpg — Mstyslav Chernov
+Panoramic view of Oia, Santorini island (Thira), Greece.
+https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Oia,_Santorini_island_(Thira),_Greece.jpg
+License: Creative Commons Attribution-ShareAlike 3.0
+https://creativecommons.org/licenses/by-sa/3.0/
+
+olive.jpg — Bouke ten Cate
+Naxos Olive Groves.
+https://commons.wikimedia.org/wiki/File:Naxos_Olive_Groves.jpg
+License: Creative Commons Attribution 4.0
+https://creativecommons.org/licenses/by/4.0/
+
+The original photographs are preserved. The page frames/crops their display and overlays text and gradients; these presentational adaptations retain the corresponding image licenses. The photography licenses do not apply to unrelated UI code or content.

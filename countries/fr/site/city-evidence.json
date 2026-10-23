@@ -1,0 +1,883 @@
+{
+ "reviewedAt": "2026-10-23",
+ "coverage": "20 dossiers in 15 cities (the largest city of each of the 13 metropolitan regions, plus Nice and Montpellier). A first selection, not an inventory of French cities or of the 18 sectors. Overseas regions are not yet covered.",
+ "method": "AI research draft (Claude, 23 October 2026): each dossier rests on an official page of the city, metropole or agglomeration, read on that date; the source locator names the section to check. Problems and figures come from the sources; actions, steps, counter-arguments and measures are editorial proposals. Needs review by people in France before publication.",
+ "records": [
+  {
+   "relatedSectors": [
+    "environment"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2988507",
+   "slug": "cours-oasis",
+   "sectorId": "education",
+   "title": "Des cours d'école plus fraîches à Paris",
+   "problem": "La Ville de Paris transforme depuis 2018 les cours de récréation asphaltées en cours Oasis, plus fraîches et végétalisées : 203 cours réalisées, 360 nouvelles prévues d'ici 2030.",
+   "action": "Publier, école par école, l'état d'avancement et les mesures de fraîcheur des cours Oasis.",
+   "steps": [
+    "Carte ouverte des cours réalisées et prévues, avec la date des travaux.",
+    "Relevés de température avant et après dans un échantillon de cours, pendant les épisodes de chaleur."
+   ],
+   "counter": "Les mesures doivent tenir compte de l'exposition et de la taille des cours ; une cour végétalisée demande un entretien régulier.",
+   "measure": "Nombre de cours livrées par rapport à l'objectif de 2030 et écart de température mesuré en été.",
+   "responsibility": "Ville de Paris, mairies d'arrondissement et communautés éducatives.",
+   "locationName": "Écoles parisiennes · programme cours Oasis",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le programme concerne de nombreuses écoles de la ville ; aucune cour particulière n'est épinglée.",
+   "sources": [
+    {
+     "title": "Cours Oasis : les écoles à l'heure du Plan Climat",
+     "url": "https://mairie10.paris.fr/pages/les-cours-oasis-les-ecoles-a-l-heure-du-plan-climat-15067",
+     "publisher": "Mairie du 10e arrondissement de Paris",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Section « Qu'est-ce qu'une cour Oasis ? »",
+     "evidence": "La page indique 203 cours Oasis réalisées depuis 2018 et 360 nouvelles cours prévues d'ici 2030 (date de mise à jour de la page).",
+     "accessNote": "Page mise à jour le 3 février 2026 ; pas de date de publication affichée."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le programme concerne de nombreuses écoles de la ville ; aucune cour particulière n'est épinglée."
+   }
+  },
+  {
+   "relatedSectors": [
+    "education",
+    "environment"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2988507",
+   "slug": "rues-aux-ecoles",
+   "sectorId": "transport",
+   "title": "Des rues sans voitures devant les écoles",
+   "problem": "Le plan « Paris, priorité piéton » prévoit de piétonniser 100 nouvelles rues aux abords des établissements scolaires d'ici 2026.",
+   "action": "Vérifier, avec les familles, la sécurité et la qualité de l'air des rues aux écoles déjà aménagées.",
+   "steps": [
+    "Liste publique des rues aux écoles réalisées et de celles qui restent à faire.",
+    "Comptages de passage et mesures de l'air aux heures d'entrée et de sortie."
+   ],
+   "counter": "Les livraisons, les secours et les personnes à mobilité réduite doivent toujours pouvoir accéder aux rues fermées.",
+   "measure": "Rues piétonnisées par rapport à l'objectif et évolution du dioxyde d'azote devant les écoles.",
+   "responsibility": "Ville de Paris, mairies d'arrondissement, écoles et parents d'élèves.",
+   "locationName": "Abords des écoles parisiennes",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le plan concerne des rues dans tout Paris ; aucune rue particulière n'est épinglée.",
+   "sources": [
+    {
+     "title": "Un « plan piéton » pour piétonniser massivement Paris",
+     "url": "https://www.paris.fr/pages/un-plan-parisien-pour-donner-la-priorite-aux-pietons-25499",
+     "publisher": "Ville de Paris",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Section « Donner plus de place aux piétons », partie « Créer 100 nouveaux hectares d'espaces piétons d'ici 2030 »",
+     "evidence": "Le plan prévoit 100 nouvelles rues piétonnes près des écoles d'ici 2026 et 50 « rues aux enfants » ; il est doté de 300 millions d'euros pour 2023-2030.",
+     "accessNote": "Page mise à jour le 14 décembre 2023 ; pas de date de publication affichée."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le plan concerne des rues dans tout Paris ; aucune rue particulière n'est épinglée."
+   }
+  },
+  {
+   "relatedSectors": [
+    "economy"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2988507",
+   "slug": "encadrement-loyers",
+   "sectorId": "housing",
+   "title": "L'encadrement des loyers après novembre 2026",
+   "problem": "L'encadrement des loyers du parc privé parisien, en place depuis le 1er juillet 2019, ne s'applique en 2026 qu'à titre exceptionnel jusqu'au 24 novembre 2026.",
+   "action": "Informer clairement les locataires de leurs droits et de ce qui change après l'échéance de novembre 2026.",
+   "steps": [
+    "Guide simple : plafond applicable, démarches de signalement et délais.",
+    "Bilan public des signalements traités et des remboursements obtenus."
+   ],
+   "counter": "L'avenir du dispositif dépend d'une décision législative nationale, pas seulement de la Ville.",
+   "measure": "Nombre de signalements traités et part des annonces qui respectent le plafond.",
+   "responsibility": "Ville de Paris, préfecture d'Île-de-France et législateur national.",
+   "locationName": "Paris · parc locatif privé",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "service-wide",
+   "coordinateNote": "La règle s'applique à toute la ville ; il n'y a pas de lieu unique à épingler.",
+   "sources": [
+    {
+     "title": "Encadrement des loyers : tout comprendre sur le dispositif",
+     "url": "https://www.paris.fr/pages/l-encadrement-des-loyers-comprendre-le-dispositif-29091",
+     "publisher": "Ville de Paris",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Sections « Une mise en place demandée et choisie par la Ville » et « Loyers de référence : les arrêtés préfectoraux annuels »",
+     "evidence": "Le dispositif existe depuis le 1er juillet 2019 ; le loyer hors charges ne peut dépasser un plafond au mètre carré ; l'arrêté 2026 s'applique du 1er juillet au 24 novembre 2026.",
+     "accessNote": "Page mise à jour le 17 juin 2026 ; pas de date de publication affichée."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "La règle s'applique à toute la ville ; il n'y a pas de lieu unique à épingler."
+   }
+  },
+  {
+   "relatedSectors": [
+    "economy"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2995469",
+   "slug": "plan-ecoles",
+   "sectorId": "education",
+   "title": "Reconstruire et rénover les écoles de Marseille",
+   "problem": "Le Plan Écoles, lancé en octobre 2021, concerne les 476 écoles publiques marseillaises : 188 établissements sont reconstruits ou lourdement réhabilités en 7 vagues, pour 1,5 milliard d'euros.",
+   "action": "Suivre chaque vague du plan de façon lisible pour les familles du quartier.",
+   "steps": [
+    "Calendrier public par école : études, chantier, livraison.",
+    "Retour des enseignants et des parents un an après la livraison."
+   ],
+   "counter": "Les chantiers déplacent des élèves pendant les travaux ; l'entretien des écoles non reconstruites ne doit pas attendre.",
+   "measure": "Écoles livrées par vague et part du budget d'entretien courant réellement engagée chaque année.",
+   "responsibility": "Ville de Marseille, État et Société Publique des Écoles Marseillaises (SPEM).",
+   "locationName": "Écoles publiques de Marseille",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le plan concerne toutes les écoles publiques de la ville ; aucune école n'est épinglée.",
+   "sources": [
+    {
+     "title": "Le Plan Écoles : programme de construction",
+     "url": "https://www.marseille.fr/ecoles/programme",
+     "publisher": "Ville de Marseille",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Sections « Les chiffres du Plan Écoles », « La Société Publique des Écoles Marseillaises (SPEM) » et « Un plan organisé en 7 vagues de constructions »",
+     "evidence": "Le plan, lancé en octobre 2021, couvre les 476 écoles publiques ; 188 établissements sont pris en charge par la SPEM ; 27 nouvelles écoles ont ouvert et 81 sont en chantier ou en études."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le plan concerne toutes les écoles publiques de la ville ; aucune école n'est épinglée."
+   }
+  },
+  {
+   "relatedSectors": [
+    "protection"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [
+    {
+     "url": "https://www.openstreetmap.org/way/642219270",
+     "name": "Rue d'Aubagne, Noailles",
+     "accessedAt": "2026-10-23"
+    }
+   ],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": [
+    5.3815291,
+    43.2937871
+   ],
+   "cityId": "city-2995469",
+   "slug": "habitat-indigne",
+   "sectorId": "housing",
+   "title": "Sortir de l'habitat indigne au centre-ville",
+   "problem": "La Ville de Marseille fait de la lutte contre l'habitat indigne une priorité : 2 300 contrôles par an, un diagnostic structurel obligatoire sur quatre périmètres depuis décembre 2025, et 87 grandes copropriétés jugées fragiles à très dégradées.",
+   "action": "Rendre visible, immeuble par immeuble, l'avancement des mises en sécurité dans les périmètres prioritaires.",
+   "steps": [
+    "Tableau public des arrêtés de mise en sécurité et des mainlevées, par quartier.",
+    "Accompagnement nommé pour chaque ménage relogé, avec un suivi après le retour."
+   ],
+   "counter": "Les données doivent protéger la vie privée des occupants ; le relogement temporaire ne doit pas devenir durable.",
+   "measure": "Délai entre signalement et contrôle, et nombre de mainlevées par rapport aux nouveaux arrêtés.",
+   "responsibility": "Ville de Marseille, État, Métropole Aix-Marseille-Provence et SPLA-IN.",
+   "locationName": "Noailles · haut de la rue d'Aubagne",
+   "evidenceKind": "plan-priority",
+   "coordinateAccuracy": "street-reference",
+   "coordinateSource": "https://www.openstreetmap.org/way/642219270",
+   "coordinateSourceType": "OpenStreetMap",
+   "mapLocationName": "Rue d'Aubagne (Noailles)",
+   "coordinateNote": "La carte montre la rue d'Aubagne à Noailles, où se trouve le lieu ressources en mémoire du drame ; le dossier concerne aussi les autres périmètres prioritaires.",
+   "sources": [
+    {
+     "title": "Éradication de l'habitat indigne",
+     "url": "https://www.marseille.fr/logement-urbanisme/logement/logements-insalubres-et-arretes-de-perils",
+     "publisher": "Ville de Marseille",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Sections « Les actions menées en chiffres », « Diagnostic structurel obligatoire » et « Construire l'avenir de Noailles en concertation avec les habitants et les associations »",
+     "evidence": "La Ville réalise 2 300 contrôles par an, impose un diagnostic structurel décennal sur quatre périmètres (délibération du 18 décembre 2025) et a achevé à l'automne 2026 le lieu ressources du haut de la rue d'Aubagne."
+    }
+   ],
+   "geographicDisposition": "source-matched",
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "La carte montre la rue d'Aubagne à Noailles, où se trouve le lieu ressources en mémoire du drame ; le dossier concerne aussi les autres périmètres prioritaires."
+   }
+  },
+  {
+   "relatedSectors": [
+    "environment"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2996944",
+   "slug": "voies-lyonnaises",
+   "sectorId": "transport",
+   "title": "Un réseau vélo sécurisé dans toute la métropole",
+   "problem": "La Métropole de Lyon construit les Voies Lyonnaises : 13 lignes cyclables, 49 communes et plus de 350 km d'ici 2030, séparées de la circulation automobile.",
+   "action": "Publier l'avancement ligne par ligne et vérifier la continuité des itinéraires pour les trajets quotidiens.",
+   "steps": [
+    "Carte de l'état de chaque tronçon : ouvert, en travaux, à l'étude.",
+    "Comptages vélo et relevés des points de rupture avec les usagers."
+   ],
+   "counter": "L'espace pris sur la voirie doit préserver les trottoirs, les livraisons et les transports en commun.",
+   "measure": "Kilomètres ouverts par rapport aux 350 km visés et fréquentation mesurée par les compteurs.",
+   "responsibility": "Métropole de Lyon et communes traversées.",
+   "locationName": "Métropole de Lyon · 13 lignes cyclables",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le dossier concerne un réseau de lignes ; aucun tronçon n'est épinglé.",
+   "sources": [
+    {
+     "title": "Les Voies Lyonnaises : 13 lignes adaptées et sécurisées",
+     "url": "https://avelo.grandlyon.com/se-deplacer-a-velo/les-voies-lyonnaises",
+     "publisher": "Métropole de Lyon",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Texte d'introduction sous le titre « Les Voies Lyonnaises » ; détail par ligne dans « Le réseau en détail »",
+     "evidence": "Le réseau compte 13 lignes, 49 communes et plus de 350 km d'ici 2030, avec des voies larges séparées de la circulation automobile."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne un réseau de lignes ; aucun tronçon n'est épinglé."
+   }
+  },
+  {
+   "relatedSectors": [
+    "environment"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2996944",
+   "slug": "cours-nature",
+   "sectorId": "education",
+   "title": "Des cours nature dans les écoles et les crèches",
+   "problem": "La Ville de Lyon végétalise des cours d'écoles et de crèches pour rapprocher les enfants de la nature et apporter de l'ombre ; 90 établissements en disposent (48 écoles et 42 crèches).",
+   "action": "Partager ce qui fonctionne dans les cours nature avec les écoles qui n'en ont pas encore.",
+   "steps": [
+    "Fiche par établissement : aménagements, arbres plantés, usages observés.",
+    "Mesures d'ombre et de température en juin dans plusieurs cours."
+   ],
+   "counter": "Les surfaces végétalisées doivent rester accessibles à tous les enfants, y compris par temps de pluie.",
+   "measure": "Établissements équipés et part de surface ombragée en été.",
+   "responsibility": "Ville de Lyon, mairies d'arrondissement et équipes éducatives.",
+   "locationName": "Écoles et crèches lyonnaises",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le programme concerne de nombreux établissements ; aucun n'est épinglé.",
+   "sources": [
+    {
+     "title": "Les cours nature",
+     "url": "https://mairie7.lyon.fr/enfance-et-education/education/les-cours-nature",
+     "publisher": "Mairie du 7e arrondissement de Lyon",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Page « Les cours nature », rubrique Enfance et éducation",
+     "evidence": "Le programme végétalise des cours pour rapprocher les enfants de la nature et créer de l'ombre ; 90 établissements en disposent, dont 48 écoles et 42 crèches."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le programme concerne de nombreux établissements ; aucun n'est épinglé."
+   }
+  },
+  {
+   "relatedSectors": [],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2972315",
+   "slug": "ligne-c-metro",
+   "sectorId": "transport",
+   "title": "La troisième ligne de métro de Toulouse",
+   "problem": "Le chantier de la ligne C comprend 22 km de tunnels, 17 stations souterraines et 4 aériennes ; le génie civil se poursuit jusqu'en 2027 et la mise en service est prévue fin 2028.",
+   "action": "Réduire la gêne du chantier pour les riverains et préparer l'accès aux futures stations.",
+   "steps": [
+    "Point d'information par station : travaux en cours, déviations, durée.",
+    "Plan d'accès à pied et à vélo autour de chaque station avant l'ouverture."
+   ],
+   "counter": "Le calendrier d'un chantier de cette taille peut évoluer ; les annonces doivent rester prudentes.",
+   "measure": "Respect des étapes annoncées et réclamations des riverains par secteur.",
+   "responsibility": "Tisséo, Toulouse Métropole et communes desservies.",
+   "locationName": "Ligne C · de Colomiers à Labège",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le dossier concerne une ligne entière ; aucune station n'est épinglée.",
+   "sources": [
+    {
+     "title": "Chantier Ligne C : toute l'information sur les travaux",
+     "url": "https://metropole.toulouse.fr/actualites/chantier-ligne-c-toute-linformation-sur-les-travaux",
+     "publisher": "Toulouse Mairie Métropole",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Section « Le calendrier », sous « Les grandes étapes de la construction de la ligne »",
+     "evidence": "La ligne compte 22 km de tunnels, 17 stations souterraines et 4 aériennes ; génie civil jusqu'en 2027, abords des stations dès 2026, mise en service prévue fin 2028.",
+     "accessNote": "Page mise à jour le 28 septembre 2026 ; pas de date de publication affichée."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne une ligne entière ; aucune station n'est épinglée."
+   }
+  },
+  {
+   "relatedSectors": [
+    "environment"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2972315",
+   "slug": "reseau-express-velo",
+   "sectorId": "transport",
+   "title": "Le Réseau Express Vélo toulousain",
+   "problem": "Toulouse Métropole construit un Réseau Express Vélo de 22 lignes réservées aux vélos, sur près de 430 km dont 290 km dans la métropole, avec des voies bidirectionnelles de 4 mètres.",
+   "action": "Rendre lisible l'avancement de chaque ligne et sa continuité avec le métro.",
+   "steps": [
+    "Carte publique des tronçons réalisés et programmés.",
+    "Stationnement vélo sécurisé prévu près des futures stations de la ligne C."
+   ],
+   "counter": "Les communes voisines avancent à des rythmes différents ; une ligne n'est utile que si elle est continue.",
+   "measure": "Kilomètres réalisés par ligne et fréquentation aux compteurs.",
+   "responsibility": "Toulouse Métropole, intercommunalités voisines et communes.",
+   "locationName": "Toulouse Métropole · 22 lignes vélo",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le dossier concerne un réseau ; aucun tronçon n'est épinglé.",
+   "sources": [
+    {
+     "title": "Un réseau express pour les vélos",
+     "url": "https://metropole.toulouse.fr/un-reseau-express-pour-les-velos",
+     "publisher": "Toulouse Mairie Métropole",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Total sous le titre principal ; lignes et largeur sous « 22 lignes réservées aux vélos »",
+     "evidence": "Le réseau compte 22 lignes réservées aux vélos sur près de 430 km, dont 290 km dans la métropole, avec des voies bidirectionnelles de 4 mètres."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne un réseau ; aucun tronçon n'est épinglé."
+   }
+  },
+  {
+   "relatedSectors": [
+    "water"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2990440",
+   "slug": "renaturation-plaine-du-var",
+   "sectorId": "environment",
+   "title": "Renaturer la plaine du Var",
+   "problem": "La Métropole Nice Côte d'Azur prévoit de restaurer 67 hectares de pleine terre et de planter 140 000 arbres dans la basse vallée du Var d'ici 2030, notamment contre la chaleur urbaine.",
+   "action": "Suivre la renaturation parcelle par parcelle et ouvrir les nouveaux espaces aux habitants.",
+   "steps": [
+    "Carte des surfaces désimperméabilisées et des plantations réalisées.",
+    "Suivi de la survie des arbres et de la fraîcheur pendant l'été."
+   ],
+   "counter": "Les plantations ont besoin d'eau et d'entretien durant les étés secs.",
+   "measure": "Hectares rendus à la pleine terre et taux de survie des arbres.",
+   "responsibility": "Métropole Nice Côte d'Azur et communes de la plaine du Var.",
+   "locationName": "Basse vallée du Var",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le dossier concerne toute la basse vallée ; aucune parcelle n'est épinglée.",
+   "sources": [
+    {
+     "title": "La stratégie de renaturation de la Plaine du Var",
+     "url": "https://www.nicecotedazur.org/actualites/la-strategie-de-renaturation-de-la-plaine-du-var/",
+     "publisher": "Métropole Nice Côte d'Azur",
+     "publishedAt": "2024-05-29",
+     "accessedAt": "2026-10-23",
+     "locator": "Section « Végétalisation de la basse vallée du Var (2024-2030) » dans « Les actions du plan de renaturation de Nice Côte d'Azur »",
+     "evidence": "Le plan prévoit 67 hectares de pleine terre restaurés d'ici 2030 et 140 000 arbres à planter, en lien avec la lutte contre la chaleur urbaine."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne toute la basse vallée ; aucune parcelle n'est épinglée."
+   }
+  },
+  {
+   "relatedSectors": [
+    "economy"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2990969",
+   "slug": "logement-abordable",
+   "sectorId": "housing",
+   "title": "Des logements abordables pour une métropole qui grandit",
+   "problem": "Le Programme local de l'habitat de Nantes Métropole vise 6 000 logements neufs par an, dont 2 000 logements sociaux et 1 200 à 1 300 logements abordables, ainsi que 5 000 rénovations par an.",
+   "action": "Montrer chaque année l'écart entre les objectifs et les logements réellement livrés.",
+   "steps": [
+    "Tableau annuel des livraisons par type : social, abordable, libre.",
+    "Délai d'attente pour un logement social, publié par commune."
+   ],
+   "counter": "La construction dépend du marché et du foncier ; la rénovation compte autant que le neuf.",
+   "measure": "Logements livrés par rapport aux objectifs annuels et rénovations réalisées.",
+   "responsibility": "Nantes Métropole, communes et bailleurs sociaux.",
+   "locationName": "Nantes Métropole · habitat",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "service-wide",
+   "coordinateNote": "La politique concerne toute la métropole ; il n'y a pas de lieu unique à épingler.",
+   "sources": [
+    {
+     "title": "Compétence Habitat, logement",
+     "url": "https://metropole.nantes.fr/ma-ville-ma-metropole/competences/competence-habitat-logement",
+     "publisher": "Nantes Métropole",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Rubrique « Notre « marque de fabrique » »",
+     "evidence": "Le PLH vise 6 000 logements neufs par an, dont 2 000 sociaux et 1 200 à 1 300 abordables, et la rénovation de 5 000 logements par an, dont 1 500 dans le parc social.",
+     "accessNote": "Page mise à jour le 16 juillet 2026 ; pas de date de publication affichée."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "La politique concerne toute la métropole ; il n'y a pas de lieu unique à épingler."
+   }
+  },
+  {
+   "relatedSectors": [
+    "economy"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2992166",
+   "slug": "gratuite-transports",
+   "sectorId": "transport",
+   "title": "Les transports gratuits pour les habitants",
+   "problem": "Depuis le 21 décembre 2023, les transports en commun sont gratuits tous les jours pour les 500 000 habitants des 31 communes de la métropole de Montpellier.",
+   "action": "Publier des résultats mesurés de la gratuité, au-delà des estimations d'économies.",
+   "steps": [
+    "Fréquentation mesurée par ligne, avant et après la gratuité.",
+    "Enquête sur les trajets en voiture évités et les nouveaux usagers."
+   ],
+   "counter": "La gratuité repose sur le financement par les entreprises ; elle ne remplace pas la fréquence et la ponctualité.",
+   "measure": "Évolution de la fréquentation et part modale de la voiture.",
+   "responsibility": "Montpellier Méditerranée Métropole et exploitant du réseau.",
+   "locationName": "Montpellier Méditerranée Métropole · réseau de transports",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "service-wide",
+   "coordinateNote": "La mesure concerne tout le réseau ; il n'y a pas de lieu unique à épingler.",
+   "sources": [
+    {
+     "title": "Gratuité des transports en commun",
+     "url": "https://www.montpellier.fr/actions/les-grands-projets/gratuite-des-transports-en-commun",
+     "publisher": "Ville de Montpellier",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "« La gratuité en 4 dates », dans « L'urgence d'agir pour le climat et contre la congestion de la métropole »",
+     "evidence": "La gratuité totale s'applique depuis le 21 décembre 2023 aux 500 000 habitants des 31 communes ; la page chiffre des économies estimées mais ne publie pas de fréquentation mesurée."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "La mesure concerne tout le réseau ; il n'y a pas de lieu unique à épingler."
+   }
+  },
+  {
+   "relatedSectors": [
+    "health",
+    "transport"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2973783",
+   "slug": "zone-faibles-emissions",
+   "sectorId": "environment",
+   "title": "La zone à faibles émissions et la qualité de l'air",
+   "problem": "La ZFE-m de l'Eurométropole de Strasbourg interdit progressivement les véhicules les plus polluants ; le report de l'interdiction des Crit'Air 3 du 1er janvier 2027 au 1er janvier 2028 est soumis à consultation publique du 26 octobre au 15 novembre 2026.",
+   "action": "Accompagner les ménages concernés avant chaque étape du calendrier.",
+   "steps": [
+    "Conseil personnalisé pour chaque foyer dont le véhicule sera interdit.",
+    "Publication des mesures de qualité de l'air qui justifient chaque étape."
+   ],
+   "counter": "Les ménages modestes et les habitants éloignés des transports sont les plus touchés par les interdictions.",
+   "measure": "Concentrations de dioxyde d'azote et de particules, et nombre de foyers accompagnés.",
+   "responsibility": "Eurométropole de Strasbourg et communes membres.",
+   "locationName": "Eurométropole de Strasbourg",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "service-wide",
+   "coordinateNote": "La zone couvre tout le territoire de l'Eurométropole ; il n'y a pas de lieu unique à épingler.",
+   "sources": [
+    {
+     "title": "ZFE-m Strasbourg : périmètre, calendrier et aides à la conversion",
+     "url": "https://www.strasbourg.eu/la-zfe-m",
+     "publisher": "Ville et Eurométropole de Strasbourg",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Section « Calendrier »",
+     "evidence": "Interdictions progressives : Crit'Air 5 (2023), 4 (2024), 3 (2027) puis 2 (2028) ; report proposé des Crit'Air 3 au 1er janvier 2028, en consultation du 26 octobre au 15 novembre 2026."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "La zone couvre tout le territoire de l'Eurométropole ; il n'y a pas de lieu unique à épingler."
+   }
+  },
+  {
+   "relatedSectors": [
+    "health"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-3031582",
+   "slug": "un-million-arbres",
+   "sectorId": "environment",
+   "title": "Un million d'arbres contre les canicules",
+   "problem": "Bordeaux Métropole vise un million d'arbres plantés en dix ans ; 674 555 l'ont été à ce jour, avec un budget de 35 M€ sur six ans, alors que les journées de canicule ont été multipliées par 16 en 30 ans.",
+   "action": "Concentrer les prochaines plantations là où la chaleur et le manque d'ombre sont les plus forts.",
+   "steps": [
+    "Carte croisant îlots de chaleur et plantations déjà réalisées.",
+    "Suivi de la survie des arbres plantés après trois étés."
+   ],
+   "counter": "Planter beaucoup ne suffit pas : l'arbre doit survivre et l'eau manque pendant les étés secs.",
+   "measure": "Arbres vivants trois ans après plantation et canopée dans les quartiers les plus chauds.",
+   "responsibility": "Bordeaux Métropole, communes, entreprises et habitants participants.",
+   "locationName": "Bordeaux Métropole",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Les plantations sont réparties sur toute la métropole ; aucun site n'est épinglé.",
+   "sources": [
+    {
+     "title": "Plantons 1 million d'arbres",
+     "url": "https://www.bordeaux-metropole.fr/metropole/projets-en-cours/nature-environnement/loperation-plantons-1-million-darbres/plantons-1",
+     "publisher": "Bordeaux Métropole",
+     "publishedAt": "2023-05-02",
+     "accessedAt": "2026-10-23",
+     "locator": "Sections « Combien d'arbres plantés ? », « Pourquoi planter des arbres ? » et « Avec quels moyens ? »",
+     "evidence": "Objectif d'un million d'arbres en 10 ans, 674 555 plantés à ce jour, 35 M€ sur 6 ans ; les journées de canicule ont été multipliées par 16 en 30 ans (page mise à jour le 2 juillet 2026)."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Les plantations sont réparties sur toute la métropole ; aucun site n'est épinglé."
+   }
+  },
+  {
+   "relatedSectors": [
+    "justice"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2998324",
+   "slug": "permis-de-louer",
+   "sectorId": "housing",
+   "title": "Le permis de louer contre l'habitat indigne",
+   "problem": "Le permis de louer est obligatoire dans 30 communes de la Métropole européenne de Lille depuis le 1er janvier 2026, pour lutter contre l'habitat indigne.",
+   "action": "Expliquer simplement la démarche aux propriétaires et publier ce que les contrôles révèlent.",
+   "steps": [
+    "Guide pas à pas et carte des secteurs concernés.",
+    "Bilan annuel : demandes, refus, travaux exigés avant location."
+   ],
+   "counter": "Le contrôle ne doit pas retirer du marché des logements réparables sans accompagner les propriétaires modestes.",
+   "measure": "Demandes instruites, refus motivés et logements remis aux normes.",
+   "responsibility": "Métropole européenne de Lille et communes concernées.",
+   "locationName": "Métropole européenne de Lille · 30 communes",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "service-wide",
+   "coordinateNote": "Le dispositif s'applique à des secteurs de 30 communes ; il n'y a pas de lieu unique à épingler.",
+   "sources": [
+    {
+     "title": "Permis de louer",
+     "url": "https://www.lillemetropole.fr/permis-de-louer",
+     "publisher": "Métropole européenne de Lille",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Introduction et partie « Depuis le 1er janvier 2026 »",
+     "evidence": "Le permis de louer est obligatoire dans 30 communes depuis le 1er janvier 2026 pour lutter contre l'habitat indigne."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dispositif s'applique à des secteurs de 30 communes ; il n'y a pas de lieu unique à épingler."
+   }
+  },
+  {
+   "relatedSectors": [],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2983990",
+   "slug": "trambus",
+   "sectorId": "transport",
+   "title": "Quatre lignes de trambus d'ici 2030",
+   "problem": "Rennes Métropole prépare quatre lignes de trambus : 55 km, une centaine de stations et 90 000 voyages par jour, avec des travaux de 2025 à 2030 et des mises en service entre 2027 et 2030.",
+   "action": "Informer chaque quartier traversé des étapes du chantier et des changements de lignes de bus.",
+   "steps": [
+    "Calendrier public par ligne et par secteur de travaux.",
+    "Concertation sur l'aménagement des stations et des carrefours."
+   ],
+   "counter": "Les chantiers perturbent les commerces et les trajets pendant plusieurs années.",
+   "measure": "Étapes respectées et fréquentation après chaque mise en service.",
+   "responsibility": "Rennes Métropole et réseau STAR.",
+   "locationName": "Rennes Métropole · 4 lignes",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le dossier concerne quatre lignes ; aucune station n'est épinglée.",
+   "sources": [
+    {
+     "title": "Quatre lignes de trambus à l'horizon 2030",
+     "url": "https://transport.metropole.rennes.fr/un-reseau-star-des-deplacements-multiples/quatre-lignes-de-trambus-a-l-horizon-2030/",
+     "publisher": "Rennes Métropole",
+     "publishedAt": "2025-04-28",
+     "accessedAt": "2026-10-23",
+     "locator": "Section « Le trambus en chiffres », sous « Les quatre lignes en détail »",
+     "evidence": "Quatre lignes, 55 km, une centaine de stations, 90 000 voyages par jour ; travaux de 2025 à 2030 et mises en service entre 2027 et 2030 (page mise à jour le 1er septembre 2026)."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne quatre lignes ; aucune station n'est épinglée."
+   }
+  },
+  {
+   "relatedSectors": [
+    "maritime"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-3003796",
+   "slug": "submersion-marine",
+   "sectorId": "protection",
+   "title": "Se préparer au risque de submersion marine",
+   "problem": "Le plan de prévention des risques littoraux couvre le risque de submersion marine dans la plaine alluviale nord, de l'embouchure de l'estuaire de la Seine jusqu'à Tancarville ; il a fait l'objet d'une enquête publique au printemps 2022.",
+   "action": "Expliquer aux habitants des zones exposées ce que le plan change pour eux et comment réagir.",
+   "steps": [
+    "Carte simple des zones exposées avec les consignes de mise à l'abri.",
+    "Exercice annuel avec les habitants et les entreprises du secteur."
+   ],
+   "counter": "L'information sur le risque ne doit pas inquiéter sans proposer de mesures concrètes.",
+   "measure": "Foyers informés dans les zones exposées et participation aux exercices.",
+   "responsibility": "Le Havre Seine Métropole, communes, État et entreprises de l'estuaire.",
+   "locationName": "Plaine alluviale nord de l'estuaire de la Seine",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le plan couvre une large plaine littorale ; aucun lieu particulier n'est épinglé.",
+   "sources": [
+    {
+     "title": "Plan de prévention des risques littoraux (PPRL) : les résultats de l'enquête publique",
+     "url": "https://www.lehavreseinemetropole.fr/actualites/plan-de-prevention-des-risques-littoraux-pprl-les-resultats-de-lenquete-publique",
+     "publisher": "Le Havre Seine Métropole",
+     "publishedAt": "2022-05-05",
+     "accessedAt": "2026-10-23",
+     "locator": "Article principal, rubrique « Risques majeurs » (article archivé)",
+     "evidence": "Le PPRL porte sur la submersion marine dans la plaine alluviale nord, de l'embouchure de l'estuaire jusqu'à Tancarville ; l'enquête publique s'est tenue du 14 février au 16 mars 2022."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le plan couvre une large plaine littorale ; aucun lieu particulier n'est épinglé."
+   }
+  },
+  {
+   "relatedSectors": [
+    "environment"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-3021372",
+   "slug": "reseau-de-chaleur",
+   "sectorId": "energy",
+   "title": "Une chaleur plus renouvelable par le réseau urbain",
+   "problem": "Le réseau de chaleur de Dijon métropole compte 46 km (Dijon, Chenôve, Talant) et 69 km (Dijon, Quetigny), alimentés à 59 % et 73 % par des énergies renouvelables et de récupération, pour l'équivalent de 55 000 logements.",
+   "action": "Indiquer à chaque bâtiment raccordable ce que coûterait et rapporterait le raccordement.",
+   "steps": [
+    "Carte des rues desservies et des bâtiments publics déjà raccordés.",
+    "Publication annuelle de la part renouvelable par secteur du réseau."
+   ],
+   "counter": "Le reste de la chaleur vient encore du gaz et du fioul ; l'extension peut accroître cette part.",
+   "measure": "Part d'énergie renouvelable et de récupération par secteur, et logements raccordés.",
+   "responsibility": "Dijon métropole et exploitants du réseau.",
+   "locationName": "Dijon métropole · réseaux de chaleur",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le dossier concerne un réseau de canalisations ; aucun lieu n'est épinglé.",
+   "sources": [
+    {
+     "title": "Réseaux de chaleur urbain",
+     "url": "https://www.dijon-metropole.fr/dijon-metropole-a-votre-service/reseaux-de-chaleur-urbain/",
+     "publisher": "Dijon métropole",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Sections « Les chaufferies » (« Installations de distribution ») et « Quels bâtiments sont raccordés ? »",
+     "evidence": "46 km et 69 km de canalisations, alimentés à 59 % et 73 % par des énergies renouvelables et de récupération, pour l'équivalent de 55 000 logements.",
+     "accessNote": "Page mise à jour le 11 juillet 2024 ; pas de date de publication affichée."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne un réseau de canalisations ; aucun lieu n'est épinglé."
+   }
+  },
+  {
+   "relatedSectors": [],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-2972191",
+   "slug": "deuxieme-ligne-tram",
+   "sectorId": "transport",
+   "title": "La deuxième ligne de tramway",
+   "problem": "La deuxième ligne de tramway de Tours mesure environ 12,5 km et relie La Riche, Tours, Joué-lès-Tours et Chambray-lès-Tours.",
+   "action": "Tenir les riverains informés de chaque phase et préparer les correspondances avec le réseau existant.",
+   "steps": [
+    "Calendrier public des travaux par secteur, mis à jour chaque mois.",
+    "Plan des correspondances bus et tram avant la mise en service."
+   ],
+   "counter": "La page officielle ne donne pas de date de mise en service ; il faut la confirmer auprès de l'autorité organisatrice.",
+   "measure": "Avancement des secteurs de travaux et satisfaction des riverains.",
+   "responsibility": "Tours Métropole Val de Loire, Syndicat des mobilités de Touraine et communes desservies.",
+   "locationName": "Ligne 2 · La Riche, Tours, Joué-lès-Tours, Chambray-lès-Tours",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le dossier concerne une ligne entière ; aucune station n'est épinglée.",
+   "sources": [
+    {
+     "title": "Le projet Lignes2tram",
+     "url": "https://www.tours.fr/page-portail-tours-decidons-ensemble/tours-decidons-ensemble/grands-projets/le-projet-lignes2tram/",
+     "publisher": "Ville de Tours",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Section « Présentation générale du projet »",
+     "evidence": "La ligne 2 mesure environ 12,5 km et dessert La Riche, Tours, Joué-lès-Tours et Chambray-lès-Tours ; la page ne donne pas de date de mise en service."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne une ligne entière ; aucune station n'est épinglée."
+   }
+  },
+  {
+   "relatedSectors": [
+    "water"
+   ],
+   "proposalStatus": "proposal",
+   "locationScope": "city",
+   "coordinateSources": [],
+   "reviewedAt": "2026-10-23",
+   "coordinateReviewedAt": "2026-10-23",
+   "coordinates": null,
+   "cityId": "city-3038334",
+   "slug": "risque-inondation",
+   "sectorId": "protection",
+   "title": "Prévenir les inondations à Ajaccio",
+   "problem": "Le territoire du Pays ajaccien est exposé aux inondations : le PPRi concerne Ajaccio et quatre autres communes, et le seul programme d'actions de prévention des inondations (PAPI) de Corse vise Ajaccio, en particulier le secteur des Cannes-Salines.",
+   "action": "Faire connaître aux habitants des quartiers exposés les travaux prévus et les bons réflexes.",
+   "steps": [
+    "Carte publique des zones inondables et des travaux du PAPI.",
+    "Réunions de quartier aux Cannes-Salines avant chaque saison des pluies."
+   ],
+   "counter": "Les travaux de protection prennent du temps ; l'information doit préciser ce qui est déjà fait.",
+   "measure": "Actions du PAPI réalisées et habitants informés dans les zones exposées.",
+   "responsibility": "Communauté d'agglomération du Pays ajaccien, Ville d'Ajaccio et État.",
+   "locationName": "Ajaccio · secteur des Cannes-Salines",
+   "evidenceKind": "plan-priority",
+   "geographicDisposition": "network-wide",
+   "coordinateNote": "Le dossier concerne plusieurs zones exposées ; aucun point n'est épinglé.",
+   "sources": [
+    {
+     "title": "Prévention et gestion des risques majeurs",
+     "url": "https://www.ca-ajaccien.corsica/prevention-gestion-risques/",
+     "publisher": "Communauté d'agglomération du Pays ajaccien",
+     "publishedAt": null,
+     "accessedAt": "2026-10-23",
+     "locator": "Section « Le risque inondation à la CAPA »",
+     "evidence": "Le PPRi concerne Ajaccio, Cuttoli-Corticchiato, Peri, Sarrola-Carcopino et Tavaco ; un PAPI, le seul de Corse, vise Ajaccio et en particulier le secteur des Cannes-Salines.",
+     "accessNote": "Page mise à jour le 14 octobre 2026 ; pas de date de publication affichée."
+    }
+   ],
+   "geographicReview": {
+    "reviewedAt": "2026-10-23",
+    "reason": "Le dossier concerne plusieurs zones exposées ; aucun point n'est épinglé."
+   }
+  }
+ ]
+}

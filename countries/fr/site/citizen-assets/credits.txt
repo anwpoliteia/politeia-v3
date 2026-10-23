@@ -1,0 +1,5 @@
+Images de cette édition
+
+hero.svg, coast.svg, land.svg, edition-mark.svg : illustrations provisoires du moteur ΑΝΩ ΠΟΛΙΤΕΙΑ
+(AGPL-3.0-or-later, sans contenu de tiers). À remplacer par des photos et une marque propres à l'édition, en indiquant ici
+pour chaque photo : auteur, titre, lien source et licence.

@@ -1,0 +1,22 @@
+# Netlify reads only this root _headers file (noesis-app/_headers inside is inert here).
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# ES module imported by the Athens lab's driving view: must be served as JavaScript.
+/athens-lab/routing.mjs
+  Content-Type: text/javascript; charset=utf-8
+
+# Licence and copyright files open as readable text in the browser.
+/COPYRIGHT.md
+  Content-Type: text/plain; charset=utf-8
+/LICENSE
+  Content-Type: text/plain; charset=utf-8
+/LICENSE-CONTENT.txt
+  Content-Type: text/plain; charset=utf-8
+/THIRD-PARTY-NOTICES.txt
+  Content-Type: text/plain; charset=utf-8
+
+# Συμπολιτεία: other editions and tools may read the shared data.
+/federation/*
+  Access-Control-Allow-Origin: *

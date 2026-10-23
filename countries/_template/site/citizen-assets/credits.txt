@@ -1,0 +1,5 @@
+Images of this edition
+
+hero.svg, coast.svg, land.svg, edition-mark.svg: placeholder illustrations from the ΑΝΩ ΠΟΛΙΤΕΙΑ engine
+(AGPL-3.0-or-later, no third-party content). Replace them with your own photos and mark, and list here for each
+photo: author, title, source link and licence.

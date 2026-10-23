@@ -1,0 +1,50 @@
+{
+  "dataset": "Central Athens relief grid for Politeia",
+  "source": "AWS Open Data Terrain Tiles (Mapzen), terrarium encoding, zoom 14",
+  "sourceUrlTemplate": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+  "sourceDocumentation": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+  "requiredAttribution": [
+    "Mapzen",
+    "Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers",
+    "United States 3DEP (formerly NED) and global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey."
+  ],
+  "attributionNote": "The source documentation lists the full required notice for all providers; the lines above are those relevant to Greece plus Mapzen for the hosted tiles.",
+  "tiles": {
+    "14/9271/6320": "e4bd1ca0a59ecf7fbc64f1bb791f2a37e278be55e55a0a2d9978c3b8bc18ffae",
+    "14/9272/6320": "a88b0972f223cc14c71e551b36a24514b10d3b42dbf5a97d741614bd4dc10464",
+    "14/9273/6320": "3dbb4108b8da709225b3c18e029ecb33d93ff71a437e8f49d065f248ecaf2014",
+    "14/9271/6321": "fbd12492ddda999850b4eb2fe39a6c0e8eede7f5a2e8b9f25ea78e1ccb010c8a",
+    "14/9272/6321": "16cb0eb6f13ee5fa0b49ebe68c9711817de9a16007d433a6a7fb9583ce4ef154",
+    "14/9273/6321": "57af8f99ea1ec03d6d4fc4c403fe0aa649d08704c170961982510df862b6e754",
+    "14/9271/6322": "d4ad2f48e5bb7ba7cf10d0bcd36a27221598f38ca11e736a4e1284651eab48dc",
+    "14/9272/6322": "c566a36fb8a9eee14d0ddb9b21ae68c61981dfd4fa857d4f72f91649626055bc",
+    "14/9273/6322": "b37a45e0b89df0b3d98b46c7214499cc158d3e4865376e65e60b1349c72fbb49"
+  },
+  "builtAt": "2026-10-12T14:38:16+00:00",
+  "grid": {
+    "spacing": 10.0,
+    "marginMetres": 500.0,
+    "cols": 383,
+    "rows": 347,
+    "smoothingPasses": 2
+  },
+  "baseElevation": 49.0,
+  "elevationRange": [
+    40.4,
+    256.5
+  ],
+  "spotChecks": {
+    "Parthenon": 145.3,
+    "Numismatic Museum": 113.4,
+    "Thissio Park": 66.8,
+    "Filopappou Hill": 94.8,
+    "Syntagma (Tomb of the Unknown Soldier)": 105.0,
+    "Lycabettus summit": 243.7
+  },
+  "limitations": [
+    "The source resolution is roughly 30 m and it is a surface model, so roofs and trees can raise it locally; a light smoothing is applied.",
+    "Sharp rock edges such as the Acropolis cliffs and the Lycabettus summit are rounded and somewhat lower than in reality.",
+    "Building heights are placed on top of this relief at the lowest ground point of each footprint; they are not re-measured.",
+    "Outside the extract the lab fades the relief to the base level; that margin is visual context only."
+  ]
+}

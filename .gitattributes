@@ -1,0 +1,3 @@
+# Files are stored byte-for-byte: no line-ending conversion on any system, so every clone builds a site
+# identical to the published release (tests/test_build.py) and matches the timestamped SHA-256 proofs.
+* -text

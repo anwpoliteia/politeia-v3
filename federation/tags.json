@@ -1,0 +1,625 @@
+{
+ "about": "Shared themes. A case gets a theme when a word in its title, problem or action starts with one of the theme's stems in the case's language (lower case, without accents). A new edition adds its language's labels and stems here; without stems its cases cannot meet the others'.",
+ "tags": {
+  "heat-shade": {
+   "label": {
+    "en": "Heat and shade",
+    "el": "Ζέστη και σκιά",
+    "fr": "Chaleur et ombre"
+   },
+   "stems": {
+    "el": [
+     "σκια",
+     "σκιασ",
+     "δροσ",
+     "θερμικ",
+     "καυσων"
+    ],
+    "fr": [
+     "ombre",
+     "ombrag",
+     "canicul",
+     "fraich",
+     "ilot de chaleur",
+     "ilots de chaleur",
+     "chaleur urbaine"
+    ],
+    "en": [
+     "shade",
+     "heat",
+     "cool",
+     "heatwave"
+    ]
+   }
+  },
+  "trees-greening": {
+   "label": {
+    "en": "Trees and greening",
+    "el": "Δέντρα και πράσινο",
+    "fr": "Arbres et végétalisation"
+   },
+   "stems": {
+    "el": [
+     "δεντρ",
+     "φυτευ",
+     "πρασιν"
+    ],
+    "fr": [
+     "arbre",
+     "vegetal",
+     "plantation",
+     "canopee",
+     "renatur"
+    ],
+    "en": [
+     "tree",
+     "green space",
+     "planting",
+     "greening",
+     "canopy"
+    ]
+   }
+  },
+  "school-environment": {
+   "label": {
+    "en": "Schools and children",
+    "el": "Σχολεία και παιδιά",
+    "fr": "Écoles et enfants"
+   },
+   "stems": {
+    "el": [
+     "σχολ",
+     "μαθητ",
+     "παιδικ"
+    ],
+    "fr": [
+     "ecole",
+     "scolaire",
+     "eleve",
+     "creche",
+     "enfant"
+    ],
+    "en": [
+     "school",
+     "pupil",
+     "children",
+     "nursery"
+    ]
+   }
+  },
+  "walking-streets": {
+   "label": {
+    "en": "Walking and streets",
+    "el": "Πεζοί και δρόμοι",
+    "fr": "Piétons et rues"
+   },
+   "stems": {
+    "el": [
+     "πεζοδρομ",
+     "πεζ",
+     "διαβασ"
+    ],
+    "fr": [
+     "pieton",
+     "trottoir",
+     "rues aux ecoles"
+    ],
+    "en": [
+     "pedestrian",
+     "pavement",
+     "sidewalk",
+     "crossing"
+    ]
+   }
+  },
+  "cycling": {
+   "label": {
+    "en": "Cycling",
+    "el": "Ποδήλατο",
+    "fr": "Vélo"
+   },
+   "stems": {
+    "el": [
+     "ποδηλ"
+    ],
+    "fr": [
+     "velo",
+     "cyclab"
+    ],
+    "en": [
+     "cycl",
+     "bike",
+     "bicycle"
+    ]
+   }
+  },
+  "public-transport": {
+   "label": {
+    "en": "Public transport",
+    "el": "Δημόσιες συγκοινωνίες",
+    "fr": "Transports publics"
+   },
+   "stems": {
+    "el": [
+     "λεωφορ",
+     "μετρο",
+     "τραμ",
+     "συγκοινων"
+    ],
+    "fr": [
+     "transports en commun",
+     "tramway",
+     "trambus",
+     "tram ",
+     "metro ",
+     "ligne de metro",
+     "autobus",
+     "bus "
+    ],
+    "en": [
+     "public transport",
+     "tram ",
+     "tramway",
+     "metro ",
+     "bus ",
+     "buses",
+     "railway"
+    ]
+   }
+  },
+  "housing-affordability": {
+   "label": {
+    "en": "Affordable housing",
+    "el": "Προσιτή στέγη",
+    "fr": "Logement abordable"
+   },
+   "stems": {
+    "el": [
+     "στεγαση",
+     "στεγαστικ",
+     "κατοικι",
+     "ενοικ",
+     "προσιτ"
+    ],
+    "fr": [
+     "loyer",
+     "abordable",
+     "logements sociaux",
+     "logement social",
+     "locati"
+    ],
+    "en": [
+     "affordable",
+     "rent",
+     "social housing",
+     "tenant"
+    ]
+   }
+  },
+  "substandard-housing": {
+   "label": {
+    "en": "Substandard buildings",
+    "el": "Επικίνδυνα κτίρια",
+    "fr": "Habitat indigne"
+   },
+   "stems": {
+    "el": [
+     "ετοιμορροπ",
+     "εγκαταλελειμ",
+     "κατεδαφισ"
+    ],
+    "fr": [
+     "indigne",
+     "insalubr",
+     "peril",
+     "degrade"
+    ],
+    "en": [
+     "substandard",
+     "unsafe building",
+     "derelict",
+     "dilapidated"
+    ]
+   }
+  },
+  "air-quality": {
+   "label": {
+    "en": "Air quality",
+    "el": "Ποιότητα αέρα",
+    "fr": "Qualité de l'air"
+   },
+   "stems": {
+    "el": [
+     "ρυπαν",
+     "αιθαλ",
+     "ατμοσφαιρ"
+    ],
+    "fr": [
+     "qualite de l air",
+     "pollution",
+     "emission",
+     "crit air"
+    ],
+    "en": [
+     "air quality",
+     "pollution",
+     "emission",
+     "low emission zone"
+    ]
+   }
+  },
+  "flood-risk": {
+   "label": {
+    "en": "Flood risk",
+    "el": "Πλημμύρες",
+    "fr": "Inondations"
+   },
+   "stems": {
+    "el": [
+     "πλημμυρ",
+     "ρεμα",
+     "ρεματ",
+     "ομβρι"
+    ],
+    "fr": [
+     "inond",
+     "crue",
+     "ppri"
+    ],
+    "en": [
+     "flood"
+    ]
+   }
+  },
+  "coastal-risk": {
+   "label": {
+    "en": "Coasts and sea level",
+    "el": "Ακτές και στάθμη θάλασσας",
+    "fr": "Littoral et submersion"
+   },
+   "stems": {
+    "el": [
+     "ακτ",
+     "διαβρωσ",
+     "παραλι"
+    ],
+    "fr": [
+     "submersion",
+     "littoral",
+     "cotier",
+     "estuaire"
+    ],
+    "en": [
+     "coast",
+     "sea level",
+     "erosion",
+     "estuary"
+    ]
+   }
+  },
+  "water-supply": {
+   "label": {
+    "en": "Drinking water and drought",
+    "el": "Νερό και λειψυδρία",
+    "fr": "Eau potable et sécheresse"
+   },
+   "stems": {
+    "el": [
+     "υδρευσ",
+     "λειψυδρ",
+     "νερ",
+     "ανομβρ"
+    ],
+    "fr": [
+     "eau potable",
+     "secheresse",
+     "ressource en eau"
+    ],
+    "en": [
+     "drinking water",
+     "drought",
+     "water supply"
+    ]
+   }
+  },
+  "energy-heating": {
+   "label": {
+    "en": "Energy and heating",
+    "el": "Ενέργεια και θέρμανση",
+    "fr": "Énergie et chauffage"
+   },
+   "stems": {
+    "el": [
+     "ενεργει",
+     "θερμανσ",
+     "φωτοβολτ",
+     "τηλεθερμ"
+    ],
+    "fr": [
+     "energ",
+     "reseau de chaleur",
+     "chauffage",
+     "renouvelable"
+    ],
+    "en": [
+     "energ",
+     "heating",
+     "district heating",
+     "renewable",
+     "solar"
+    ]
+   }
+  },
+  "health-access": {
+   "label": {
+    "en": "Access to health care",
+    "el": "Πρόσβαση στην υγεία",
+    "fr": "Accès aux soins"
+   },
+   "stems": {
+    "el": [
+     "υγει",
+     "ιατρ",
+     "νοσοκομ"
+    ],
+    "fr": [
+     "sante",
+     "soins",
+     "medecin",
+     "hopital"
+    ],
+    "en": [
+     "health",
+     "doctor",
+     "hospital",
+     "clinic"
+    ]
+   }
+  },
+  "accessibility": {
+   "label": {
+    "en": "Accessibility",
+    "el": "Προσβασιμότητα",
+    "fr": "Accessibilité"
+   },
+   "stems": {
+    "el": [
+     "προσβασιμ",
+     "αναπηρ",
+     "ραμπ"
+    ],
+    "fr": [
+     "accessib",
+     "handicap",
+     "mobilite reduite"
+    ],
+    "en": [
+     "accessib",
+     "disab",
+     "wheelchair",
+     "step-free"
+    ]
+   }
+  },
+  "waste": {
+   "label": {
+    "en": "Waste and recycling",
+    "el": "Απορρίμματα και ανακύκλωση",
+    "fr": "Déchets et recyclage"
+   },
+   "stems": {
+    "el": [
+     "απορριμ",
+     "ανακυκλ"
+    ],
+    "fr": [
+     "dechet",
+     "recycl"
+    ],
+    "en": [
+     "waste",
+     "recycl"
+    ]
+   }
+  },
+  "civil-protection": {
+   "label": {
+    "en": "Civil protection",
+    "el": "Πολιτική προστασία",
+    "fr": "Sécurité civile"
+   },
+   "stems": {
+    "el": [
+     "πυρκαγι",
+     "σεισμ",
+     "εκκενωσ",
+     "ετοιμοτητ"
+    ],
+    "fr": [
+     "incendi",
+     "securite civile",
+     "prevention des risques",
+     "exercice"
+    ],
+    "en": [
+     "wildfire",
+     "fire safety",
+     "earthquake",
+     "evacuation",
+     "emergency"
+    ]
+   }
+  },
+  "digital-services": {
+   "label": {
+    "en": "Digital services",
+    "el": "Ψηφιακές υπηρεσίες",
+    "fr": "Services numériques"
+   },
+   "stems": {
+    "el": [
+     "ψηφιακ",
+     "διαδικτ",
+     "ηλεκτρονικ"
+    ],
+    "fr": [
+     "numeriq",
+     "internet",
+     "en ligne"
+    ],
+    "en": [
+     "digital",
+     "online",
+     "internet"
+    ]
+   }
+  },
+  "participation": {
+   "label": {
+    "en": "Participation and transparency",
+    "el": "Συμμετοχή και διαφάνεια",
+    "fr": "Participation et transparence"
+   },
+   "stems": {
+    "el": [
+     "διαβουλευσ",
+     "διαφαν",
+     "συμμετοχ"
+    ],
+    "fr": [
+     "concertation",
+     "transparen",
+     "participati",
+     "consultation"
+    ],
+    "en": [
+     "consultation",
+     "transparen",
+     "participat"
+    ]
+   }
+  },
+  "care-ageing": {
+   "label": {
+    "en": "Care and ageing",
+    "el": "Φροντίδα και ηλικιωμένοι",
+    "fr": "Aide et vieillissement"
+   },
+   "stems": {
+    "el": [
+     "ηλικιωμ",
+     "φροντιδ"
+    ],
+    "fr": [
+     "personnes agees",
+     "aidant",
+     "autonomie"
+    ],
+    "en": [
+     "older people",
+     "elderly",
+     "carer",
+     "ageing"
+    ]
+   }
+  },
+  "culture-heritage": {
+   "label": {
+    "en": "Culture and heritage",
+    "el": "Πολιτισμός και κληρονομιά",
+    "fr": "Culture et patrimoine"
+   },
+   "stems": {
+    "el": [
+     "μνημει",
+     "πολιτισ",
+     "μουσει",
+     "αρχαιολογ"
+    ],
+    "fr": [
+     "patrimoine",
+     "culture",
+     "musee"
+    ],
+    "en": [
+     "heritage",
+     "culture",
+     "museum",
+     "monument"
+    ]
+   }
+  },
+  "tourism-pressure": {
+   "label": {
+    "en": "Tourism",
+    "el": "Τουρισμός",
+    "fr": "Tourisme"
+   },
+   "stems": {
+    "el": [
+     "τουρισ",
+     "επισκεπτ"
+    ],
+    "fr": [
+     "touris"
+    ],
+    "en": [
+     "touris",
+     "visitor"
+    ]
+   }
+  },
+  "ports-maritime": {
+   "label": {
+    "en": "Ports and the sea",
+    "el": "Λιμάνια και θάλασσα",
+    "fr": "Ports et mer"
+   },
+   "stems": {
+    "el": [
+     "λιμαν",
+     "πλοι",
+     "θαλασσ"
+    ],
+    "fr": [
+     "portuair",
+     "maritime",
+     "port de"
+    ],
+    "en": [
+     "harbour",
+     "port of",
+     "maritime",
+     "ferry"
+    ]
+   }
+  },
+  "local-economy": {
+   "label": {
+    "en": "Local economy and work",
+    "el": "Τοπική οικονομία και εργασία",
+    "fr": "Économie locale et travail"
+   },
+   "stems": {
+    "el": [
+     "παραγωγ",
+     "επιχειρ",
+     "εργασ",
+     "δεξιοτ"
+    ],
+    "fr": [
+     "producteur",
+     "entreprise",
+     "emploi",
+     "competence"
+    ],
+    "en": [
+     "producer",
+     "business",
+     "employment",
+     "skills"
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "politeia-v",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "POLITEIA-V — the live-intelligence build of POLITEIA. Real AI Counsellors (Claude Opus 5) propose; named humans decide; the public reasons in the open.",
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"node server/index.mjs\" \"vite\"",
+    "weekly": "node scripts/weekly-scan.mjs",
+    "dev:web": "vite",
+    "dev:api": "node server/index.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "tsc -b --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.88.0",
+    "@supabase/supabase-js": "^2.108.2",
+    "@types/katex": "^0.16.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "katex": "^0.16.47",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^6.30.0",
+    "recharts": "^2.15.0",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ΠΟΛΙΤΕΙΑ">
+  <rect width="64" height="64" rx="12" fill="#0B0E14" />
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="11.25" fill="none" stroke="#1E2530" stroke-width="1.5" />
+  <g stroke="#C8A24A" stroke-width="6" stroke-linecap="square">
+    <line x1="15" y1="21" x2="49" y2="21" />
+    <line x1="22" y1="21" x2="22" y2="47" />
+    <line x1="42" y1="21" x2="42" y2="47" />
+  </g>
+</svg>

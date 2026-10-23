@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- © 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ · ipoliteia.gr · SPDX-License-Identifier: AGPL-3.0-or-later · Κείμενα: CC BY-NC-ND 4.0 · Όνομα και Δωδεκάπλευρο: με επιφύλαξη παντός δικαιώματος · βλ. /COPYRIGHT.md -->
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">
+<title>Country Studio — make the civic platform for your country</title>
+<meta name="description" content="Build your country's edition of the ΑΝΩ ΠΟΛΙΤΕΙΑ engine in your browser: map, priorities with sources, your language. Download a ready site.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="studio.css?v=20261023-1">
+<script type="module" src="studio.js?v=20261023-1"></script>
+</head>
+<body>
+<header class="st-header">
+  <div><span class="st-overline">COUNTRY STUDIO</span><h1>Make the civic platform for your country.</h1>
+    <p class="st-lead">Same five stages, same interface. Your country's map, your priorities, your language. Everything happens in this browser; nothing is sent anywhere until you publish it yourself.</p></div>
+  <div class="st-tools"><span id="st-saved" class="st-saved" role="status">Not started</span>
+    <button type="button" data-action="export">Save project file ↓</button>
+    <label class="st-file">Open project file<input type="file" accept=".json,application/json" data-action="import"></label>
+    <button type="button" class="st-quiet" data-action="reset">Start over</button></div>
+</header>
+<nav class="st-steps" aria-label="Steps">
+  <button type="button" data-step="1"><b>1</b> Country &amp; name</button>
+  <button type="button" data-step="2"><b>2</b> Map</button>
+  <button type="button" data-step="3"><b>3</b> Priorities</button>
+  <button type="button" data-step="4"><b>4</b> Language</button>
+  <button type="button" data-step="5"><b>5</b> Publish</button>
+</nav>
+<main id="st-main" class="st-main" tabindex="-1"><p class="st-note">Loading the engine…</p></main>
+<footer class="st-footer">The engine is free software (AGPL-3.0-or-later). Your edition uses its own name and mark and shows “Built on ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)”. Map data: Eurostat GISCO (© EuroGeographics), Wikidata (CC0), © OpenStreetMap contributors. <a href="../COPYRIGHT.md">Terms</a></footer>
+</body></html>

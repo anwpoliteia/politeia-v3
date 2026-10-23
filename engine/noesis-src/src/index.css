@@ -1,0 +1,148 @@
+@import 'tailwindcss';
+
+/*
+  POLITEIA design system (spec §3) — BINDING.
+  Clinical, institutional, trustworthy. Obsidian + cream; gold marks virtue,
+  copper marks dissent/risk. No gradients, no shadows beyond one subtle
+  elevation, no rounded-3xl (max rounded-md). Hairlines define structure.
+*/
+@theme {
+  --color-bg: #0b0e14; /* obsidian / deep navy */
+  --color-elev: #11151e; /* raised surfaces, cards */
+  --color-line: #1e2530; /* hairline borders */
+  --color-text: #ece7dd; /* off-white / cream */
+  --color-muted: #8a93a2; /* secondary */
+  --color-gold: #c8a24a; /* primary accent: emphasis, virtue marks */
+  --color-copper: #b06a3b; /* secondary accent: warnings, counter-argument */
+  --color-positive: #6fae7e; /* approve / eudaimonia gain */
+  --color-negative: #b5566b; /* dissent / eudaimonia cost */
+
+  --font-sans:
+    'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+
+  /* ΑΝΩ studio wordmark — matched to the ΑΝΩ site so the parent brand reads
+     identically here: Cormorant Garamond, with the Ω in the ΑΝΩ gold. */
+  --font-anw: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --color-anw-gold: #c9b37e;
+
+  /* Polytonic Greek for classical quotations (ΙΣΟΝΟΜΙΑ's Aristotle).
+     Cormorant Garamond has no Greek, so ancient accents would fall apart;
+     GFS Didot (Greek Font Society) and Palatino Linotype carry the full
+     Greek Extended block. */
+  --font-greek: 'GFS Didot', 'Palatino Linotype', 'Gentium Book Plus', serif;
+
+  --radius-md: 0.375rem;
+
+  /* Disable Tailwind's default oversized radii to honour "max rounded-md". */
+  --radius-lg: 0.375rem;
+  --radius-xl: 0.375rem;
+  --radius-2xl: 0.375rem;
+  --radius-3xl: 0.375rem;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-bg);
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-feature-settings: 'cv11', 'ss01';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Accessibility is a feature, not a setting (spec §3). */
+  :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-gold) 35%, transparent);
+    color: var(--color-text);
+  }
+
+  /* Hairline scrollbars in keeping with the institutional restraint. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-line) transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Single subtle elevation — the only allowed shadow. */
+  .elev {
+    box-shadow: 0 1px 0 0 var(--color-line);
+  }
+}
+
+/* Motion: minimal, purposeful, reduced-motion respected (spec §3). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*
+  Flush-left KaTeX display math. KaTeX centres both the block (.katex-display)
+  and its inner .katex child. These rules are intentionally UNLAYERED: KaTeX's
+  own stylesheet is unlayered, and unlayered styles beat any @layer regardless
+  of specificity — so a layered override would silently lose.
+*/
+.math-flush .katex-display,
+.math-flush .katex-display > .katex {
+  text-align: left;
+}
+.math-flush .katex-display {
+  margin: 0;
+}
+
+/*
+  POLITEIA-V: the live-reasoning caret. Blinks at the end of streamed text so
+  the citizen sees the Counsellor writing in real time.
+*/
+@keyframes v-caret {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.v-caret {
+  animation: v-caret 1s step-end infinite;
+}
+
+/*
+  Phones: the hero and body copy read large on a ~375px screen. Scale the root
+  font down below Tailwind's `sm` breakpoint — every rem-based size (type and
+  spacing alike) follows it, so the whole layout tightens proportionally.
+*/
+@media (max-width: 639px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+/* The little souls may leave the landing hero downwards. The Soul keeps its
+   centre, size, motion and colours: it measures itself from its frame and only
+   gets extra canvas below it, where its own radial fade carries on. The section
+   after the hero stays above the light. Wide screens only. */
+@media (min-width: 1024px) {
+  .soul-hero { overflow: visible; overflow-x: clip; --soul-bleed: 352px; }
+  .soul-hero canvas { height: calc(100% + var(--soul-bleed)) !important; }
+  .soul-hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; background: var(--color-line); z-index: 2; pointer-events: none; }
+  .soul-hero + * { position: relative; z-index: 3; }
+}

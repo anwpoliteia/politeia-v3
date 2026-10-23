@@ -1,0 +1,35 @@
+{
+  "code": "fr",
+  "name": "France",
+  "name_en": "France",
+  "language": "fr",
+  "locale": "fr-FR",
+  "edition": {
+    "name": "CITÉ COMMUNE",
+    "tagline": "Le jour d'après, ensemble.",
+    "domain": "",
+    "origin": false,
+    "mark": "citizen-assets/edition-mark.svg#edition-mark",
+    "credit": "Basé sur ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)",
+    "hero": { "src": "citizen-assets/hero.svg", "coords": "48.8566° N &nbsp; 2.3522° E" },
+    "photos": { "coast": "citizen-assets/coast.svg", "land": "citizen-assets/land.svg" }
+  },
+  "map": {
+    "regions": "country-regions.geojson",
+    "regionLevel": "NUTS-1",
+    "label": "Carte des 13 régions de France métropolitaine",
+    "center": [2.21, 46.23],
+    "zoom": 5.0,
+    "bounds": [[-5.12, 41.37], [9.54, 51.09]],
+    "mini": { "lon0": -5.42, "lat0": 51.39, "sx": 17.04, "sy": 24.63, "viewBox": "-8 0 270 270" }
+  },
+  "modules": {},
+  "contentNotice": "Brouillon de recherche par IA (23 octobre 2026) : chaque dossier cite une source officielle, mais doit être relu par des personnes en France.",
+  "about": {
+    "status": "Demonstration pack made with tools/new_country.py steps and an AI research pass; «CITÉ COMMUNE» is a working name for the French team to replace.",
+    "regions": "13 metropolitan régions (NUTS-1, Eurostat GISCO 2021); overseas regions (FRY) not yet included",
+    "cities": "15 cities from Wikidata: the largest of each region, then the largest others",
+    "dossiers": "20 dossiers in research/dossiers.json, each from an official city, metropole or agglomeration page read on 23 October 2026",
+    "photos": "placeholder illustrations from the engine template"
+  }
+}

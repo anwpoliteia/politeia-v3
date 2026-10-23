@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- © 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ · ipoliteia.gr · SPDX-License-Identifier: AGPL-3.0-or-later · Κείμενα: CC BY-NC-ND 4.0 · Όνομα και Δωδεκάπλευρο: με επιφύλαξη παντός δικαιώματος · βλ. /COPYRIGHT.md -->
+<html lang="el">
+<head>
+  <meta charset="utf-8"><meta name="author" content="ΑΝΩ ΠΟΛΙΤΕΙΑ"><meta name="copyright" content="© 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142a2c">
+  <title>Αθήνα · Εργαστήριο Γαίας — ΑΝΩ ΠΟΛΙΤΕΙΑ</title>
+  <link rel="stylesheet" href="style.css?v=20261012-terrain">
+  <link rel="stylesheet" href="driving.css?v=20261020-mustang">
+  <link rel="stylesheet" href="attica-minimap.css?v=20261016-attica-nav-2">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+  <main id="world" aria-label="Τρισδιάστατη Αθήνα">
+    <div id="canvas-mount"></div>
+    <div id="landmark-labels" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="../?design=gaia" aria-label="Επιστροφή στη Γαία"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="../citizen-assets/ano-politeia-mark.svg#ano-politeia-mark"></use></svg><span>ΑΝΩ ΠΟΛΙΤΕΙΑ<small>ΓΑΙΑ / ΕΡΓΑΣΤΗΡΙΟ ΠΟΛΗΣ</small></span></a>
+      <div class="top-actions"><span class="live-badge"><i></i> ΠΕΙΡΑΜΑΤΙΚΗ 3D ΑΘΗΝΑ</span><button id="sources-button" class="quiet-button" aria-haspopup="dialog">Σχετικά &amp; πηγές</button><a class="back-link" href="../?design=gaia">Έξοδος <span>↗</span></a></div>
+    </header>
+    <aside class="side-panel glass">
+      <p class="eyebrow">Ο ΤΟΠΟΣ ΣΟΥ, ΜΙΑ ΝΕΑ ΟΠΤΙΚΗ</p>
+      <h1>Αθήνα.<br><em>Δοκίμασε το αύριο.</em></h1>
+      <p class="intro-copy">Περπάτησε στους δρόμους της. Δώσε χώρο στις δικές σου ιδέες.</p>
+      <label class="field-label" for="destination">ΠΟΥ ΘΑ ΠΑΜΕ;</label>
+      <select id="destination" disabled><option value="overview">Πανοραμική Αθήνα</option></select>
+      <div class="mode-switch" aria-label="Τρόπος περιήγησης"><button id="orbit-button" aria-pressed="true">↗ Πανοραμική</button><button id="walk-button" aria-pressed="false">↟ Περίπατος</button></div>
+      <button id="home-button" class="home-button">Επιστροφή στην αρχική θέα <span>↺</span></button>
+      <div class="data-summary"><span>Αποτυπώσεις OpenStreetMap</span><strong id="data-count">Φόρτωση γεωμετρίας…</strong><small id="terrain-note">Αθήνα · πραγματικό ανάγλυφο (~30 μ.) · εκτιμώμενα ύψη κτιρίων όπου λείπουν</small></div>
+    </aside>
+    <div class="compass glass" aria-hidden="true"><span>Β</span><svg viewBox="0 0 60 60"><path d="M30 7L22 41L30 35L38 41Z" fill="currentColor"/><circle cx="30" cy="30" r="24" fill="none" stroke="currentColor" stroke-opacity=".25"/></svg></div>
+    <div class="walk-hint glass" id="walk-hint" hidden><strong>Στο επίπεδο του δρόμου</strong><span>WASD / βέλη · σύρε για να κοιτάξεις · Shift για γρήγορα · διπλό κλικ για να πας εκεί</span><button id="lock-button">Ελεύθερη ματιά</button></div>
+    <div id="crosshair" hidden aria-hidden="true">+</div>
+    <div class="touch-pad" id="touch-pad" hidden aria-label="Κίνηση στον δρόμο"><button data-move="forward" aria-label="Κίνηση μπροστά">↑</button><button data-move="left" aria-label="Κίνηση αριστερά">←</button><button data-move="backward" aria-label="Κίνηση πίσω">↓</button><button data-move="right" aria-label="Κίνηση δεξιά">→</button></div>
+    <section class="workbench glass" aria-label="Αλλαγές στην πόλη">
+      <div class="workbench-heading"><span>ΦΑΝΤΑΣΟΥ ΜΙΑ ΑΛΛΑΓΗ</span><output id="proposal-count" aria-live="polite">0 προτάσεις</output></div>
+      <div class="tool-row" aria-label="Εργαλεία προτάσεων">
+        <button class="tool active" data-tool="explore" aria-pressed="true"><span class="tool-icon">⌖</span>Περιήγηση</button>
+        <button class="tool" data-tool="tree" aria-pressed="false"><span class="tool-icon">♧</span>Δέντρο</button>
+        <button class="tool" data-tool="bench" aria-pressed="false"><span class="tool-icon bench-icon">⌑</span>Παγκάκι</button>
+        <button class="tool" data-tool="garden" aria-pressed="false"><span class="tool-icon">▱</span>Πράσινο</button>
+        <button class="tool" data-tool="erase" aria-pressed="false"><span class="tool-icon">−</span>Αφαίρεση</button>
+      </div>
+      <div class="save-row"><button id="undo-button" disabled>↶ Αναίρεση</button><button id="save-button">Αποθήκευση</button><button id="export-button">Εξαγωγή ↗</button><button id="import-button">Εισαγωγή</button><button id="clear-button" disabled>Καθαρισμός</button></div>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+    </section>
+    <div class="status-line"><p id="status" role="status" aria-live="polite">Ετοιμάζουμε την Αθήνα…</p><p class="attribution"><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a> · Υψόμετρα: Mapzen, EU-DEM, SRTM · Οι αλλαγές σου είναι τοπικές προτάσεις.</p></div>
+    <div id="loading" class="loading-screen"><div class="loading-orbit"></div><strong>Μια άλλη ματιά στην Αθήνα.</strong><span id="loading-status">Φόρτωση πραγματικών γεωμετριών…</span></div>
+    <div id="error-panel" class="error-panel glass" role="alert" hidden><h2>Η 3D προβολή δεν ξεκίνησε.</h2><p id="error-message"></p><button id="retry-button">Δοκίμασε ξανά</button><a href="../?design=gaia">Επιστροφή στη Γαία</a></div>
+  </main>
+  <dialog id="sources-dialog"><button class="dialog-close" data-close aria-label="Κλείσιμο">×</button><p class="eyebrow">ΜΕ ΕΙΛΙΚΡΙΝΕΙΑ ΓΙΑ ΤΟΝ ΤΟΠΟ</p><h2>Μια πόλη για να<br><em>δοκιμάζεις ιδέες.</em></h2><p>Αυτό είναι ένα πειραματικό περιβάλλον της Αθήνας στον browser. Χρησιμοποιεί πραγματικά περιγράμματα κτιρίων, δρόμων και χώρων πρασίνου από το OpenStreetMap.</p><p>Γύρω από το κέντρο, το πραγματικό ανάγλυφο συνεχίζει ως τον Πειραιά, τη Βουλιαγμένη, το Μαρούσι και πέρα από τον Υμηττό, με τη θάλασσα στο μηδέν. Ο Πειραιάς, η Βουλιαγμένη και οι γειτονιές βόρεια και ανατολικά του κέντρου φορτώνονται με την ίδια λεπτομέρεια όταν πλησιάζεις. Στο υπόλοιπο λεκανοπέδιο τα κτίρια εμφανίζονται ως απλοί όγκοι πάνω στα πραγματικά τους περιγράμματα, με ύψος από το OpenStreetMap όπου υπάρχει και με εκτίμηση αλλού, και σχεδιάζονται μόνο γύρω από τη θέα σου.</p><p>Τα στάδια, από το ΟΑΚΑ με τις αψίδες του Καλατράβα, το Καραϊσκάκη, την OPAP Arena και το ΣΕΦ ως τα δημοτικά γήπεδα, αποδίδονται ως απλοποιημένα μοντέλα κερκίδων πάνω στο περίγραμμα του OpenStreetMap· όπου είναι χαρτογραφημένες μόνο μεμονωμένες κερκίδες, σχεδιάζονται μόνο αυτές. Το ύψος είναι καταγεγραμμένο, δημοσιευμένο ή εκτίμηση. Το Κέντρο Πολιτισμού Ίδρυμα Σταύρος Νιάρχος με το ηλιακό στέγαστρο και ο Ανατολικός Αερολιμένας του Saarinen στο Ελληνικό είναι απλοποιημένα μοντέλα από δημοσιευμένες περιγραφές, όχι αποτυπώσεις.</p><p>Το ανάγλυφο του εδάφους προέρχεται από ανοιχτό μοντέλο υψομέτρων με ανάλυση περίπου 30 μέτρων: η Ακρόπολη, ο Λυκαβηττός και ο Φιλοπάππου φαίνονται, αλλά οι απότομοι βράχοι είναι στρογγυλεμένοι και λίγο χαμηλότεροι από την πραγματικότητα. Τα ύψη των κτιρίων προέρχονται από καταγεγραμμένα στοιχεία ή από εκτίμηση. Τα σημαντικότερα μνημεία, όπως ο Παρθενώνας, το Ερέχθειο, τα Προπύλαια, το Ηφαιστείο, το Ολυμπιείο, το Ωδείο Ηρώδου Αττικού και το Καλλιμάρμαρο, αποδίδονται με απλοποιημένα τρισδιάστατα μοντέλα πάνω στο πραγματικό τους περίγραμμα και με δημοσιευμένες διαστάσεις· δεν είναι φωτογραμμετρικές αποτυπώσεις. Τα μουσεία ξεχωρίζουν με απόχρωση μαρμάρου. Δεν είναι ακριβές αντίγραφο ολόκληρης της Αθήνας.</p><p>Η παρούσα έκδοση λειτουργεί με Three.js, όχι με Unity. Οι προτάσεις σου αποθηκεύονται μόνο σε αυτόν τον browser· δεν αλλάζουν την πραγματική πόλη και δεν υποβάλλονται στον δήμο.</p><p class="terrain-credit">Αυτοκίνητο διαδρομών: «[FREE] 2024 Ford Mustang Dark Horse» του livanovbog (Sketchfab), CC BY 4.0· απλοποιημένο για τον browser (κλειστές πόρτες, χωρίς μηχανή, μικρότερες υφές). Τα σήματα ανήκουν στους κατόχους τους.</p><p class="terrain-credit">Υψόμετρα: Mapzen Terrain Tiles (AWS Open Data). Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers. Global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey.</p><p>Τα σχήματα στεγών, οι αυλές, τα τμήματα κτιρίων και τα καταγεγραμμένα χρώματα ακολουθούν το OpenStreetMap. Παράθυρα, μπαλκόνια, πεζοδρόμια και διαγραμμίσεις προστίθενται ενδεικτικά για την περιήγηση και δεν αποτελούν αποτύπωση των πραγματικών όψεων. Οι διαδρομές χρησιμοποιούν αρχικούς κόμβους δρόμων, μονόδρομους και διαθέσιμους περιορισμούς στροφής· δεν περιλαμβάνουν ζωντανή κυκλοφορία.</p><div class="source-links"><a href="../athens-data/driving-provenance.json" target="_blank" rel="noopener">Προέλευση διαδρομών ↗</a><a href="../athens-data/provenance.json" target="_blank" rel="noopener">Προέλευση δεδομένων ↗</a><a href="../athens-data/terrain-provenance.json" target="_blank" rel="noopener">Προέλευση υψομέτρων ↗</a><a href="../athens-data/region-provenance.json" target="_blank" rel="noopener">Προέλευση ευρύτερης περιοχής ↗</a><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap · ODbL ↗</a><a href="https://sketchfab.com/3d-models/a29c8bb07f6e41b594fe2248366cffbf" target="_blank" rel="noopener">Mustang Dark Horse · livanovbog · CC BY 4.0 ↗</a><a href="https://threejs.org/" target="_blank" rel="noopener">Three.js ↗</a></div><button class="primary-button" data-close>Πίσω στην Αθήνα</button></dialog>
+  <dialog id="clear-dialog"><p class="eyebrow">ΟΙ ΔΙΚΕΣ ΣΟΥ ΠΡΟΤΑΣΕΙΣ</p><h2>Από την αρχή;</h2><p>Θα αφαιρεθούν όλες οι αποθηκευμένες προτάσεις αυτού του browser. Μπορείς πρώτα να τις κρατήσεις με «Εξαγωγή».</p><div class="dialog-actions"><button data-close>Κρατάω τις προτάσεις</button><button id="confirm-clear" class="primary-button">Αφαίρεση όλων</button></div></dialog>
+  <script type="module" src="app.js?v=20261020-darkhorse-3"></script>
+</body>
+</html>
+

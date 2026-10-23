@@ -1,0 +1,11 @@
+/*! © 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ · ipoliteia.gr · SPDX-License-Identifier: AGPL-3.0-or-later · Κείμενα: CC BY-NC-ND 4.0 · Όνομα και Δωδεκάπλευρο: με επιφύλαξη παντός δικαιώματος · βλ. /COPYRIGHT.md */
+/* Five dossiers per page, limited to the Kyma section. */
+body[data-design="kyma"] #city-dossiers { scroll-margin-top:24px; }
+body[data-design="kyma"] .brief-pagination { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-top:26px; padding-top:22px; border-top:1px solid var(--line); }
+body[data-design="kyma"] .brief-pagination>span { font-size:12px; color:var(--muted); text-align:center; }
+body[data-design="kyma"] .brief-pagination button { min-height:44px; }
+@media(max-width:650px) {
+  body[data-design="kyma"] .brief-pagination { flex-wrap:wrap; gap:12px; }
+  body[data-design="kyma"] .brief-pagination>span { order:-1; width:100%; }
+  body[data-design="kyma"] .brief-pagination button { font-size:12px; padding:10px 12px; }
+}

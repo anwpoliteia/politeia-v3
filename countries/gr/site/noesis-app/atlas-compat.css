@@ -1,0 +1,17 @@
+/*! © 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ · ipoliteia.gr · SPDX-License-Identifier: AGPL-3.0-or-later · Κείμενα: CC BY-NC-ND 4.0 · Όνομα και Δωδεκάπλευρο: με επιφύλαξη παντός δικαιώματος · βλ. /COPYRIGHT.md */
+/* Keep the original mobile menu available before the full Greek navigation fits. */
+@media (min-width:768px) and (max-width:1400px){header nav>div:nth-child(2){display:none}header .md\:hidden{display:block}}
+/* Share the dock's dodecahedron angle with the five outer sections. */
+header nav > a[aria-label="ΑΝΩ ΠΟΛΙΤΕΙΑ"] { align-items:center; }
+header nav > a[aria-label="ΑΝΩ ΠΟΛΙΤΕΙΑ"]::before { content:""; display:block; width:42px; height:42px; flex:0 0 42px; background:#d4b879; -webkit-mask:url("../citizen-assets/ano-politeia-mark.svg?v=20261012-dock-angle") center/contain no-repeat; mask:url("../citizen-assets/ano-politeia-mark.svg?v=20261012-dock-angle") center/contain no-repeat; }
+@media(max-width:450px) { header nav > a[aria-label="ΑΝΩ ΠΟΛΙΤΕΙΑ"]::before { width:32px; height:32px; flex-basis:32px; } }
+/* The fifth section already has the shared brand above the embedded app. */
+html.atlas-embedded header nav > a[aria-label="ΑΝΩ ΠΟΛΙΤΕΙΑ"] { display:none; }
+
+/* The host already labels this read-only preview; avoid a duplicate embedded bar. */
+html.atlas-embedded .noesis-preview-banner { display:none!important; }
+/* Preserve the original hero, without its negative inset clipping the equation
+   on medium desktop widths inside the host. */
+@media (min-width:1024px) and (max-width:1215px) {
+  html.atlas-embedded .lg\:-ml-8 { margin-left:0; }
+}

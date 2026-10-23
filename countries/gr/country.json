@@ -1,0 +1,70 @@
+{
+  "code": "gr",
+  "name": "Ελλάδα",
+  "name_en": "Greece",
+  "language": "el",
+  "edition": {
+    "name": "ΑΝΩ ΠΟΛΙΤΕΙΑ",
+    "tagline": "Η επόμενη μέρα, μαζί.",
+    "domain": "ipoliteia.gr",
+    "origin": true,
+    "mark": "citizen-assets/ano-politeia-mark.svg?v=20261012-dock-angle#ano-politeia-mark",
+    "credit": "",
+    "hero": {
+      "src": "citizen-assets/athens.jpg",
+      "coords": "37.9838° N &nbsp; 23.7278° E"
+    },
+    "photos": {
+      "coast": "citizen-assets/aegean.jpg",
+      "land": "citizen-assets/olive.jpg"
+    }
+  },
+  "map": {
+    "regions": "greece-regions.geojson",
+    "regionLevel": "NUTS-2",
+    "label": "Χάρτης των 13 περιφερειών της Ελλάδας",
+    "center": [
+      24.4,
+      38.5
+    ],
+    "zoom": 5.5,
+    "bounds": [
+      [
+        19.3,
+        34.75
+      ],
+      [
+        29.68,
+        41.8
+      ]
+    ],
+    "mini": {
+      "lon0": 19,
+      "lat0": 42,
+      "sx": 27,
+      "sy": 34,
+      "viewBox": "-8 0 270 270"
+    }
+  },
+  "modules": {
+    "cityLab": {
+      "cityId": "city-264371",
+      "href": "athens-lab/"
+    }
+  },
+  "about": {
+    "cities": "city-data.js: 13 regions with their priorities, 40 cities (GeoNames IDs)",
+    "dossiers": "improvements.js: 650 reviewed dossiers, generated from research/reviewed-dossiers.json",
+    "photos": "citizen-assets/ (credits in credits.txt)",
+    "transparency": {
+      "name": "Διαύγεια",
+      "url": "https://diavgeia.gov.gr"
+    },
+    "openData": {
+      "name": "data.gov.gr",
+      "url": "https://data.gov.gr"
+    },
+    "noesis": "noesis-app/ is the Greek build of engine/noesis-src, kept prebuilt until phase 5; national compute: ΔΑΙΔΑΛΟΣ",
+    "cityLab": "athens-lab/ + athens-data/: 3D city and driving view, Athens only"
+  }
+}

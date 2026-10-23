@@ -1,0 +1,4 @@
+# Submissions are not open yet: the Extras read calls get static, empty answers.
+/api/session        /api-static/session.json   200
+/api/mine           /api-static/mine.json      200
+/api/dossiers/*     /api-static/dossier.json   200

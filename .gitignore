@@ -1,0 +1,18 @@
+# Built sites (python tools/build.py --country <code>)
+dist/
+
+# Secrets never leave this computer; .env.example documents the variables
+.env
+.env.*
+!.env.example
+
+# Dependencies and caches
+node_modules/
+__pycache__/
+.pytest_cache/
+*.tsbuildinfo
+
+# Operating systems
+.DS_Store
+Thumbs.db
+desktop.ini

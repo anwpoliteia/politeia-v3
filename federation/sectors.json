@@ -1,0 +1,23 @@
+{
+ "about": "The 18 sectors every edition uses, with their division or group in COFOG, the UN/OECD/Eurostat Classification of the Functions of Government, so that cases can be compared across countries.",
+ "sectors": {
+  "health": {"en": "Health", "cofog": "07"},
+  "education": {"en": "Education", "cofog": "09"},
+  "agriculture": {"en": "Agriculture and food", "cofog": "04.2"},
+  "transport": {"en": "Transport", "cofog": "04.5"},
+  "water": {"en": "Water and infrastructure", "cofog": "06.3"},
+  "environment": {"en": "Environment", "cofog": "05"},
+  "energy": {"en": "Energy", "cofog": "04.3"},
+  "housing": {"en": "Housing", "cofog": "06.1"},
+  "work": {"en": "Work", "cofog": "04.1"},
+  "care": {"en": "Social care", "cofog": "10"},
+  "culture": {"en": "Culture", "cofog": "08"},
+  "protection": {"en": "Civil protection", "cofog": "03.2"},
+  "services": {"en": "Public services", "cofog": "01"},
+  "justice": {"en": "Justice", "cofog": "03.3"},
+  "economy": {"en": "Economy", "cofog": "01.1"},
+  "tourism": {"en": "Tourism", "cofog": "04.7"},
+  "maritime": {"en": "Sea and ports", "cofog": "04.5"},
+  "digital": {"en": "Digital access", "cofog": "04.6"}
+ }
+}

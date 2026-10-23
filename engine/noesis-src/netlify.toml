@@ -1,0 +1,77 @@
+# Netlify continuous-deployment config. With the GitHub repo linked, every push
+# runs this build and publishes automatically to ipoliteia.gr.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA fallback so client-side routes (/proposal/:id, /ministry/:slug, …) resolve
+# on direct load / refresh. (Also covered by public/_redirects.)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Long-cache the content-hashed build assets.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ── Security headers ───────────────────────────────────────────────────────
+# Defence in depth for a static site. The CSP is an allow-list of exactly what
+# the app legitimately loads — anything injected (a stray <script>, a rogue
+# iframe, an exfiltration fetch) is refused by the browser itself.
+#
+# Each source is here for a reason; do not widen without one:
+#   style 'unsafe-inline' — React/Tailwind set element styles, and KaTeX injects
+#     its own <style>. Inline STYLE is not inline SCRIPT: it cannot execute JS.
+#   fonts.googleapis / gstatic — the Cormorant/Inter/JetBrains webfonts.
+#   supabase.co — auth (magic link + session). connect-src only, no scripts.
+#   railway.app — the Δελφοί oracle, embedded as an iframe.
+#   youtube.com / ytimg.com — ΒΑΣΑΝΟΣ embeds the video under check with
+#     YouTube's own IFrame Player API (iframe_api from youtube.com, which pulls
+#     www-widgetapi.js from s.ytimg.com; thumbnails from i.ytimg.com). The
+#     captions themselves are fetched by our server, not by the browser, so no
+#     youtube host is needed in connect-src.
+#   media-src blob: — ΒΑΣΑΝΟΣ plays a citizen's own recording from an object
+#     URL. It stays in the browser; nothing is uploaded.
+#   frame-ancestors 'self' — nobody may frame ipoliteia.gr (anti-clickjacking).
+#   object-src 'none' — no Flash/applet legacy vectors.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://www.youtube.com https://s.ytimg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://i.ytimg.com; media-src 'self' blob: https:; connect-src 'self' https://chikynaejxqahetwhemw.supabase.co https://diavgeia-watchdog-production.up.railway.app; frame-src 'self' https://diavgeia-watchdog-production.up.railway.app https://www.youtube.com https://www.youtube-nocookie.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests"
+    # Never let a browser guess a MIME type — kills "upload .txt, execute as JS".
+    X-Content-Type-Options = "nosniff"
+    # Legacy clickjacking guard for browsers predating frame-ancestors.
+    X-Frame-Options = "SAMEORIGIN"
+    # Don't leak the citizen's path (e.g. which proposal they read) to third parties.
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # The site needs none of these; deny them outright.
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), interest-cohort=()"
+    # HTTPS only, for two years, including subdomains — no downgrade window.
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    # Isolate this origin from cross-origin popups it opens.
+    Cross-Origin-Opener-Policy = "same-origin"
+
+# NOUS 2.0 (public/nous2-app/) is a self-contained app: d3 + three.js from CDN,
+# a large inline <script>, and inline onclick handlers. It is embedded in an
+# iframe sandboxed WITHOUT allow-same-origin (opaque origin — it cannot touch
+# this site's session/cookies), so the sandbox is its isolation boundary and a
+# relaxed CSP here cannot weaken the main site. The strict /* policy above would
+# block its CDNs and inline scripts and render it blank; this more-specific rule
+# grants exactly what it loads. Keep in sync with public/_headers.
+[[headers]]
+  for = "/nous2-app/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://d3js.org https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Cross-Origin-Opener-Policy = "same-origin"

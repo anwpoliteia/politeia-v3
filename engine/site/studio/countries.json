@@ -1,0 +1,46 @@
+{
+ "about": "Countries the Studio can map with Eurostat GISCO (NUTS 2021) and Wikidata. level: the NUTS level that matches the regions people know; exclude: regions far from the mainland, left off the small map (they can be added back).",
+ "credit": {
+  "en": "Built on ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)", "fr": "Basé sur ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)", "de": "Basiert auf ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)",
+  "it": "Basato su ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)", "es": "Basado en ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)", "pt": "Baseado na ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)",
+  "nl": "Gebaseerd op ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)", "pl": "Oparte na ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)", "el": "Βασισμένο στην ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)",
+  "ro": "Bazat pe ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)", "sv": "Bygger på ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)", "da": "Bygger på ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)",
+  "cs": "Založeno na ΑΝΩ ΠΟΛΙΤΕΙΑ (ipoliteia.gr)", "hu": "Az ΑΝΩ ΠΟΛΙΤΕΙΑ alapján (ipoliteia.gr)"
+ },
+ "notice": {
+  "en": "Draft: every priority cites an official source, but people in this country still need to review it.",
+  "fr": "Brouillon de recherche : chaque dossier cite une source officielle, mais doit être relu par des personnes du pays."
+ },
+ "countries": [
+  {"nuts": "AT", "name": "Österreich", "english": "Austria", "language": "de", "locale": "de-AT", "level": 2, "wikidata": "Q40", "exclude": []},
+  {"nuts": "BE", "name": "Belgique / België", "english": "Belgium", "language": "fr", "locale": "fr-BE", "level": 1, "wikidata": "Q31", "exclude": []},
+  {"nuts": "BG", "name": "България", "english": "Bulgaria", "language": "bg", "locale": "bg-BG", "level": 2, "wikidata": "Q219", "exclude": []},
+  {"nuts": "HR", "name": "Hrvatska", "english": "Croatia", "language": "hr", "locale": "hr-HR", "level": 2, "wikidata": "Q224", "exclude": []},
+  {"nuts": "CY", "name": "Κύπρος", "english": "Cyprus", "language": "el", "locale": "el-CY", "level": 1, "wikidata": "Q229", "exclude": []},
+  {"nuts": "CZ", "name": "Česko", "english": "Czechia", "language": "cs", "locale": "cs-CZ", "level": 3, "wikidata": "Q213", "exclude": []},
+  {"nuts": "DK", "name": "Danmark", "english": "Denmark", "language": "da", "locale": "da-DK", "level": 2, "wikidata": "Q35", "exclude": []},
+  {"nuts": "EE", "name": "Eesti", "english": "Estonia", "language": "et", "locale": "et-EE", "level": 3, "wikidata": "Q191", "exclude": []},
+  {"nuts": "FI", "name": "Suomi", "english": "Finland", "language": "fi", "locale": "fi-FI", "level": 3, "wikidata": "Q33", "exclude": []},
+  {"nuts": "FR", "name": "France", "english": "France", "language": "fr", "locale": "fr-FR", "level": 1, "wikidata": "Q142", "exclude": ["FRY"]},
+  {"nuts": "DE", "name": "Deutschland", "english": "Germany", "language": "de", "locale": "de-DE", "level": 1, "wikidata": "Q183", "exclude": []},
+  {"nuts": "EL", "name": "Ελλάδα", "english": "Greece", "language": "el", "locale": "el-GR", "level": 2, "wikidata": "Q41", "exclude": []},
+  {"nuts": "HU", "name": "Magyarország", "english": "Hungary", "language": "hu", "locale": "hu-HU", "level": 3, "wikidata": "Q28", "exclude": []},
+  {"nuts": "IE", "name": "Éire / Ireland", "english": "Ireland", "language": "en", "locale": "en-IE", "level": 2, "wikidata": "Q27", "exclude": []},
+  {"nuts": "IT", "name": "Italia", "english": "Italy", "language": "it", "locale": "it-IT", "level": 2, "wikidata": "Q38", "exclude": []},
+  {"nuts": "LV", "name": "Latvija", "english": "Latvia", "language": "lv", "locale": "lv-LV", "level": 3, "wikidata": "Q211", "exclude": []},
+  {"nuts": "LT", "name": "Lietuva", "english": "Lithuania", "language": "lt", "locale": "lt-LT", "level": 3, "wikidata": "Q37", "exclude": []},
+  {"nuts": "LU", "name": "Lëtzebuerg / Luxembourg", "english": "Luxembourg", "language": "fr", "locale": "fr-LU", "level": 1, "wikidata": "Q32", "exclude": []},
+  {"nuts": "MT", "name": "Malta", "english": "Malta", "language": "en", "locale": "en-MT", "level": 3, "wikidata": "Q233", "exclude": []},
+  {"nuts": "NL", "name": "Nederland", "english": "Netherlands", "language": "nl", "locale": "nl-NL", "level": 2, "wikidata": "Q55", "exclude": []},
+  {"nuts": "PL", "name": "Polska", "english": "Poland", "language": "pl", "locale": "pl-PL", "level": 2, "wikidata": "Q36", "exclude": []},
+  {"nuts": "PT", "name": "Portugal", "english": "Portugal", "language": "pt", "locale": "pt-PT", "level": 2, "wikidata": "Q45", "exclude": ["PT20", "PT30"]},
+  {"nuts": "RO", "name": "România", "english": "Romania", "language": "ro", "locale": "ro-RO", "level": 3, "wikidata": "Q218", "exclude": []},
+  {"nuts": "SK", "name": "Slovensko", "english": "Slovakia", "language": "sk", "locale": "sk-SK", "level": 3, "wikidata": "Q214", "exclude": []},
+  {"nuts": "SI", "name": "Slovenija", "english": "Slovenia", "language": "sl", "locale": "sl-SI", "level": 3, "wikidata": "Q215", "exclude": []},
+  {"nuts": "ES", "name": "España", "english": "Spain", "language": "es", "locale": "es-ES", "level": 2, "wikidata": "Q29", "exclude": ["ES70", "ES63", "ES64"]},
+  {"nuts": "SE", "name": "Sverige", "english": "Sweden", "language": "sv", "locale": "sv-SE", "level": 3, "wikidata": "Q34", "exclude": []},
+  {"nuts": "NO", "name": "Norge", "english": "Norway", "language": "nb", "locale": "nb-NO", "level": 2, "wikidata": "Q20", "exclude": []},
+  {"nuts": "CH", "name": "Schweiz / Suisse / Svizzera", "english": "Switzerland", "language": "de", "locale": "de-CH", "level": 3, "wikidata": "Q39", "exclude": []},
+  {"nuts": "IS", "name": "Ísland", "english": "Iceland", "language": "is", "locale": "is-IS", "level": 2, "wikidata": "Q189", "exclude": []}
+ ]
+}

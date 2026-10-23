@@ -1,0 +1,11 @@
+/*! © 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ · ipoliteia.gr · SPDX-License-Identifier: AGPL-3.0-or-later · Κείμενα: CC BY-NC-ND 4.0 · Όνομα και Δωδεκάπλευρο: με επιφύλαξη παντός δικαιώματος · βλ. /COPYRIGHT.md */
+/* The little souls may leave the hero downwards (approved 21/10/2026). The Soul keeps its centre,
+   size, motion and colours: it measures itself from the original frame and only gets extra canvas
+   below it (--soul-bleed; the Soul measures the overhang against its own frame), where its own radial fade carries on. The section after the hero stays
+   above the light, so its text and controls read and work as before. Wide screens only. */
+@media (min-width: 1024px) {
+  .soul-hero { overflow: visible; overflow-x: clip; --soul-bleed: 352px; }
+  .soul-hero canvas { height: calc(100% + var(--soul-bleed)) !important; }
+  .soul-hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; background: var(--color-line, #1e2530); z-index: 2; pointer-events: none; }
+  .soul-hero + * { position: relative; z-index: 3; }
+}

@@ -1,0 +1,36 @@
+{
+ "schemaVersion": 1,
+ "title": "Αθήνα, Πειραιάς, Βουλιαγμένη — ανάγλυφο",
+ "originLon": 23.735,
+ "originLat": 37.975,
+ "projection": "Same local equirectangular metres as athens.json; east +x, north +z.",
+ "file": "region-terrain.bin",
+ "encoding": "int16 little-endian",
+ "unit": "decimetres above sea level",
+ "order": "row-major; row 0 is the southern edge (zMin), column 0 the western edge (xMin)",
+ "xMin": -13530.0,
+ "zMin": -20520.0,
+ "spacing": 30.0,
+ "cols": 815,
+ "rows": 998,
+ "lonLat": [
+  23.58,
+  37.79,
+  23.86,
+  38.06
+ ],
+ "seaLevel": 0,
+ "min": -3.8,
+ "max": 1015.0,
+ "sha256": "e01b09e232c72be936a54d7421cc45e8bb760a5a97e4d01111f3014670c3fc2a",
+ "source": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+ "zoom": 14,
+ "tiles": 208,
+ "retrievedAt": "2026-10-14T13:59:49.649444+00:00",
+ "builtAt": "2026-10-14T17:16:42.912925+00:00",
+ "attribution": "Υψόμετρα: Mapzen Terrain Tiles (AWS Open Data) · EU-DEM, Copernicus · SRTM, USGS",
+ "limitations": [
+  "About 30 m source resolution; a surface model, so dense blocks and trees can lift the ground slightly; one 3x3 smoothing pass.",
+  "Sea depths are the source bathymetry; the renderer draws the sea surface at 0 m and the coastline where the relief crosses it."
+ ]
+}

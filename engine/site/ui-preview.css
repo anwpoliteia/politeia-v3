@@ -1,0 +1,243 @@
+/*! © 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ · ipoliteia.gr · SPDX-License-Identifier: AGPL-3.0-or-later · Κείμενα: CC BY-NC-ND 4.0 · Όνομα και Δωδεκάπλευρο: με επιφύλαξη παντός δικαιώματος · βλ. /COPYRIGHT.md */
+/* Separate review copy only. All new styling is scoped to .pv-* classes. */
+body.pv-review {padding-top:42px}
+[hidden] {display:none!important}
+#pv-toolbar {position:fixed;inset:0 0 auto;min-height:42px;z-index:80;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:5px 5.5%;background:#e9e4d7;color:#302f2b;border-bottom:1px solid #d4cdbd;font:11px/1.4 Manrope,Arial,sans-serif;letter-spacing:.04em}
+.pv-review-label {display:flex;gap:7px;align-items:center;font-weight:800;white-space:nowrap}
+.pv-review-label i,.pv-truth i,.pv-dot {display:inline-block;width:5px;height:5px;flex:0 0 5px;background:#ae8c42;border-radius:50%}
+.pv-review-label small {font-weight:500;font-size:10px;letter-spacing:0}
+.pv-mode {display:flex;padding:2px;background:#d8d2c5;border-radius:30px;gap:2px}
+.pv-mode button {font:inherit;padding:4px 15px;border-radius:25px;color:#514b40;min-height:26px}
+.pv-mode button[aria-pressed=true] {background:#fffdf6;box-shadow:0 1px 3px #0001;color:#26251f}
+.pv-review-info {font:inherit;white-space:nowrap}
+.pv-simple:not([data-design=noesis]) .header-links {display:none}
+.pv-simple[data-design=gaia] .site-header .location,.pv-simple .gaia-sector-icons,.pv-simple .gaia-caption {display:none}
+.pv-simple .city-brief-card>div>p {display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.pv-simple .city-brief-card {padding-block:24px}
+.pv-simple[data-design=helios] .helios-main .panorama {height:calc(100dvh - var(--home-header-height) - var(--home-dock-height) - 3 * var(--home-edge-gap) - 42px)}
+.pv-simple[data-design=gaia] .gaia-main {height:calc(100dvh - 136px)}
+.pv-noesis {max-width:1420px;margin:auto;padding:25px 5.5% 0}
+.pv-eyebrow {display:flex;align-items:center;gap:11px;font-size:10px;letter-spacing:.18em;color:#d4b879}
+.pv-eyebrow svg {width:25px;height:25px}
+.pv-context {margin-left:auto;color:#959ba8;letter-spacing:.03em;font-size:11px}
+.pv-hero {display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:20px;padding:42px 0 45px;min-height:430px}
+.pv-kicker {display:block;font-size:10px;letter-spacing:.14em;line-height:1.7;font-weight:600;color:var(--muted)}
+.pv-hero h1 {font-family:var(--serif);font-size:clamp(42px,4.9vw,70px);line-height:1.12;letter-spacing:-.035em;margin:20px 0 25px;color:#f1eee5}
+.pv-hero h1 em {color:#d4b879;font-weight:400}
+.pv-hero-copy>p {font-size:15px;color:#b0b4be;line-height:1.9;max-width:470px}
+.pv-hero-actions {display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin:29px 0 19px}
+.pv-gold {background:#d5b978;color:#15181b;border-radius:50px;padding:14px 22px;font-size:12px;font-weight:700;display:flex;align-items:center;gap:24px;min-height:47px}
+.pv-gold:hover {background:#e2cd9e}
+.pv-quiet {font-size:12px;border-bottom:1px solid #7e7260;padding:7px 0;color:#c9ccd2;display:flex;gap:15px}
+.pv-fine {font-size:10px;color:#8e96a4}
+.pv-cosmos {position:relative;aspect-ratio:1;max-width:440px;width:100%;justify-self:end;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle,#bd994c10 2%,#baa25b05 45%,transparent 67%)}
+.pv-orbit {position:absolute;border:1px solid #d4b8791d;border-radius:50%;inset:8%}
+.pv-orbit-2 {inset:20%;border-color:#d4b87928}
+.pv-orbit-3 {inset:32%;border-style:dashed;border-color:#d4b87925}
+.pv-cosmos-core {width:47%;color:#d4b879;filter:drop-shadow(0 0 17px #d6bc8324)}
+.pv-cosmos-core svg {width:100%;height:auto;display:block}
+.pv-cosmos-core .solid-rear {opacity:.16}
+.pv-cosmos-core g {stroke-width:.65}
+.pv-star {position:absolute;width:5px;height:5px;border-radius:50%;background:#d5ba82;box-shadow:0 0 10px #d5ba8266}
+.pv-star-a {top:22%;left:19%}.pv-star-b {bottom:30%;right:23%;width:3px;height:3px}.pv-star-c {top:19%;right:21%;opacity:.5;width:3px;height:3px}
+.pv-orbit-label {position:absolute;bottom:2%;font-size:9px;letter-spacing:.2em;color:#958976}
+.pv-journey {display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #28303d;border-bottom:1px solid #28303d;padding:24px 0;gap:25px}
+.pv-journey>div {display:flex;gap:16px}
+.pv-journey>div>span {font-size:10px;padding-top:3px;color:#b7a179;font-variant-numeric:tabular-nums}
+.pv-journey p {margin:0}.pv-journey strong {display:block;font-size:13px;font-weight:500;color:#dedbd2}.pv-journey small {display:block;font-size:11px;color:#9199a8;margin-top:7px;max-width:240px}
+.pv-method {padding:30px;border:1px solid var(--line);border-radius:18px;background:#11151c;margin:0 0 30px;scroll-margin-top:65px}
+.pv-method h2 {font-family:var(--serif);font-size:34px;margin:10px 0}
+.pv-method p {font-size:13px;color:#a7aebc;max-width:760px}
+.pv-method-links {display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:25px}
+.pv-method-links a {border-top:1px solid #3c3e42;padding-top:15px}
+.pv-method-links strong {display:block;font-size:13px;font-weight:600}.pv-method-links strong span {float:right;color:#d4b879}
+.pv-method-links a>span {font-size:11px;color:#a2a9b5;display:block;margin-top:8px}
+.pv-collection {padding:48px 0 20px;scroll-margin-top:70px}
+.pv-collection-head {display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:24px}
+.pv-collection h2 {font-family:var(--serif);font-size:37px;margin:10px 0}
+.pv-collection-head p {font-size:11px;color:#9ca5b5;margin:8px 0 0}
+.pv-sector {font-size:10px;color:#939baa;display:flex;flex-direction:column;gap:8px;min-width:190px}
+.pv-sector select {border:1px solid #313a49;border-radius:25px;font-size:12px;color:#e0dfd9;padding:10px 32px 10px 15px}
+.pv-record-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.pv-record {padding:23px;border:1px solid #29313d;border-radius:17px;background:#10151d;display:flex;flex-direction:column;min-width:0;transition:border-color .2s}
+.pv-record:hover {border-color:#776a4d}
+.pv-record-meta {display:flex;justify-content:space-between;gap:15px;font-size:9px;color:#bda779;letter-spacing:.04em;margin-bottom:18px}
+.pv-record-meta span:last-child {color:#6b7483;font-variant-numeric:tabular-nums}
+.pv-record h3 {font-family:var(--serif);font-size:25px;line-height:1.25;margin:0 0 13px;color:#e5e3dc}
+.pv-record p {color:#9fa8b7;font-size:12px;line-height:1.8;margin-bottom:18px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.pv-record-status {margin-top:auto;font-size:9px;color:#b6b2a4;display:flex;gap:7px;align-items:center;padding:8px 0 18px}
+.pv-record-open {border-top:1px solid #2c3440;padding:15px 0 0;font-size:11px;text-align:left;color:#d6c29b;display:flex;justify-content:space-between}
+.pv-pager {display:flex;justify-content:space-between;gap:12px;font-size:11px;padding-top:23px;align-items:center}
+.pv-pager button {border:1px solid var(--line);border-radius:30px;padding:10px 17px;font:inherit}
+.pv-pager button:disabled {opacity:.3}
+.pv-collection-note {font-size:10px;color:#9099a8;margin-top:20px}
+.pv-full-link {display:flex;justify-content:space-between;gap:20px;font-size:12px;border-top:1px solid var(--line);padding:25px 0 45px;color:#9fa6b2}
+.pv-full-link a {color:#d4b879}
+/* The existing dialog stays in the same theme; the amount shown changes. */
+.pv-simple #dialog {--ink:#172e40;--muted:#586672;--paper:#fff;--line:#dce2e4;--accent:#173b57;width:min(860px,calc(100vw - 32px));max-height:calc(100dvh - 80px);border-radius:22px;padding:32px}
+.pv-simple #dialog .result-title {font-family:var(--serif);font-size:36px;line-height:1.2;margin:20px 25px 22px 0}
+.pv-simple #dialog .context-line {font-size:10px}
+.pv-truth {display:flex;flex-wrap:wrap;gap:9px 20px;font-size:10px;padding:15px 0;border-top:1px solid var(--line);color:var(--muted)}
+.pv-truth span {display:flex;align-items:center;gap:6px}
+.pv-simple .pv-dossier {border-top:0;margin-top:5px;padding-top:0}
+.pv-tabs {display:grid;grid-template-columns:repeat(3,1fr);gap:4px;border-radius:12px;padding:5px;background:color-mix(in srgb,var(--ink) 6%,transparent);margin:10px 0 23px}
+.pv-tabs button {padding:11px 8px;border-radius:9px;font-size:12px;color:var(--muted);min-height:44px}
+.pv-tabs [aria-selected=true] {background:var(--paper);color:var(--ink);box-shadow:0 2px 7px #0001}
+.pv-tab-panel {outline:0}
+.pv-brief-intro>p {font-size:14px;line-height:1.85;margin:12px 0 8px}
+.pv-brief-intro>small {font-size:10px;color:var(--muted)}
+.pv-two-col {display:grid;grid-template-columns:1fr 1fr;gap:25px;padding:24px 0 9px}
+.pv-two-col section+section {border-left:1px solid var(--line);padding-left:25px}
+.pv-two-col h3 {font-family:var(--serif);font-size:24px;margin-bottom:12px}
+.pv-two-col p {font-size:13px;line-height:1.8;color:var(--muted)}
+.pv-dossier .ex-disclosure {border-radius:10px}
+.pv-dossier .ex-disclosure>summary {font-size:12px;padding:15px}
+.pv-dossier .ex-inside h3 {font-size:17px;margin-top:18px}
+.pv-dossier .ex-inside {font-size:13px}
+.pv-panel-next {display:flex;align-items:center;justify-content:space-between;gap:16px;padding:25px 0 10px}
+.pv-panel-next>span {font-size:12px;color:var(--muted)}
+.pv-panel-next .primary {font-size:12px;padding:11px 18px}
+.pv-panel-intro {font-size:14px}
+.pv-preview-hint {font-size:11px;line-height:1.7;padding:12px 15px;background:color-mix(in srgb,var(--accent) 8%,transparent);border-radius:9px;border:1px solid var(--line)}
+.pv-dossier .ex-write {border:0;background:none}.pv-dossier .ex-write>summary {display:none}.pv-dossier .ex-write>.ex-inside {padding:0}
+.pv-dossier .ex-type {margin-top:18px}
+.pv-dossier .ex-primary {order:-1}
+.pv-export {position:relative;font-size:11px;padding:8px}
+.pv-export>summary {cursor:pointer}
+.pv-export button {margin-top:10px}
+.pv-dossier-foot {display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px;margin-top:20px;font-size:10px;color:var(--muted)}
+.pv-dossier-foot button {font:inherit;text-decoration:underline;text-underline-offset:4px}
+#pv-notes {width:min(680px,calc(100vw - 32px));border:1px solid #d4cdbd;border-radius:22px;background:#f9f7f1;color:#27343b;padding:37px;max-height:85dvh;font-size:13px}
+#pv-notes::backdrop {background:#0009;backdrop-filter:blur(6px)}
+#pv-notes h2 {font-family:var(--serif);font-size:40px;margin:20px 0 25px}
+.pv-change-list {padding-left:21px}.pv-change-list li {padding:8px 0}.pv-change-list strong {font-weight:600}
+#pv-notes .secondary {font-size:11px;display:inline-block;margin-top:10px}
+@media(max-width:900px) {
+ .pv-simple[data-design=gaia] .gaia-main{height:auto}
+ .pv-hero{min-height:380px;padding-block:35px}.pv-hero h1{font-size:47px}
+ .pv-hero-actions{gap:16px}.pv-gold{padding:13px 19px;gap:15px;font-size:11px}
+ .pv-record-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .pv-journey{gap:15px}.pv-journey>div{gap:10px}
+}
+@media(max-width:650px) {
+ #pv-toolbar{padding-inline:12px;gap:7px}.pv-review-label{font-size:9px;gap:5px}.pv-review-label small{display:none}
+ .pv-mode button{font-size:10px;padding-inline:11px}.pv-review-info{font-size:10px}
+ .pv-simple:not([data-design=noesis]) .site-header .brand{font-size:14px}.pv-simple:not([data-design=noesis]) .site-header .brand small{font-size:6px}
+ .pv-noesis{padding:23px 22px 0}.pv-context{font-size:9px;letter-spacing:0}
+ .pv-hero{grid-template-columns:1fr;gap:5px;padding:32px 0 24px}
+ .pv-hero h1{font-size:46px;margin:20px 0}.pv-hero-copy>p{font-size:13px}
+ .pv-hero-actions{gap:19px;margin-top:24px}.pv-quiet{font-size:11px}
+ .pv-cosmos{width:185px;justify-self:center;grid-row:2;margin-top:10px}.pv-orbit-label{font-size:7px;bottom:-2px}
+ .pv-journey{grid-template-columns:1fr;padding:20px 0;gap:19px}
+ .pv-journey small{max-width:none;margin-top:3px;font-size:11px}
+ .pv-method{padding:22px}.pv-method h2{font-size:29px}.pv-method-links{grid-template-columns:1fr;gap:20px}
+ .pv-collection{padding-top:32px}.pv-collection-head{align-items:start;flex-direction:column;gap:16px}
+ .pv-collection h2{font-size:32px}.pv-sector{width:100%}
+ .pv-record-grid{grid-template-columns:1fr}.pv-record{padding:23px}.pv-record h3{font-size:27px}
+ .pv-pager{font-size:9px}.pv-pager button{padding:9px 11px}
+ .pv-full-link{flex-direction:column;gap:9px}
+ .pv-simple #dialog{padding:24px 18px;width:calc(100vw - 16px);max-height:calc(100dvh - 30px);border-radius:17px}
+ .pv-simple #dialog .result-title{font-size:29px;margin-right:18px}
+ .pv-truth{font-size:9px;gap:6px 12px}.pv-tabs{gap:1px;padding:3px}.pv-tabs button{font-size:10px;padding-inline:4px}
+ .pv-two-col{grid-template-columns:1fr;gap:3px}.pv-two-col section+section{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}
+ .pv-panel-next{align-items:start;flex-direction:column}.pv-dossier-foot{font-size:10px}
+ #pv-notes{padding:30px 23px}
+}
+@media(prefers-reduced-motion:reduce){.pv-record{transition:none}}
+
+/* Fifth-section typography: the same Inter stack as the retained Noesis app.
+   Brand lettering and mathematical notation retain their specialist typefaces. */
+body.pv-simple[data-design=noesis] {--sans:'Inter','Noto Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;font-family:var(--sans)}
+.pv-simple[data-design=noesis] :is(.pv-noesis h1,.pv-noesis h2,.pv-noesis h3,#dialog .result-title,#dialog h3,.city-brief h2,.city-brief h3) {font-family:var(--sans);font-style:normal}
+.pv-simple[data-design=noesis] .pv-hero h1 {font-weight:500;font-size:clamp(38px,4.4vw,62px);letter-spacing:-.045em;line-height:1.16}
+.pv-simple[data-design=noesis] .pv-hero h1 em {font-family:inherit;font-style:normal;font-weight:500}
+.pv-simple[data-design=noesis] :is(.pv-collection h2,.pv-method h2) {font-size:30px;line-height:1.3;letter-spacing:-.035em;font-weight:500}
+.pv-simple[data-design=noesis] .pv-record h3 {font-size:18px;line-height:1.5;letter-spacing:-.015em;font-weight:500;margin-bottom:12px}
+.pv-simple[data-design=noesis] #dialog .result-title {font-size:30px;font-weight:550;line-height:1.4;letter-spacing:-.03em}
+.pv-simple[data-design=noesis] .pv-two-col h3 {font-size:17px;font-weight:600;line-height:1.5}
+.pv-record-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.pv-record {padding:25px 27px;border-color:#283240;background:linear-gradient(135deg,#111721,#0e141d);border-radius:16px}
+.pv-record p {font-size:12px;line-height:1.85;color:#a9b2c1}
+.pv-record-status {color:#c4b797;font-size:10px}
+.pv-record-open {font-size:12px;padding-top:16px;min-height:44px}
+.pv-result-range {display:flex;justify-content:space-between;gap:18px;padding:0 0 16px;font-size:11px;color:#99a4b5}
+.pv-result-range b {font-weight:600;color:#d7dce3}
+.pv-result-range>span:last-child {font-size:10px}
+.pv-pager {padding-top:24px;margin-bottom:8px;gap:16px}
+.pv-pager button {min-height:44px;font-size:12px;padding:10px 20px;background:#121922}
+.pv-pager button:not(:disabled):hover {border-color:#b59b66;color:#e1c88f}
+.pv-pager label {display:flex;align-items:center;gap:8px;font-size:11px;color:#9ba5b5}
+.pv-pager select {font-size:12px;color:#e1e5eb;border:1px solid #35404f;border-radius:8px;min-height:42px;padding:8px 26px 8px 12px}
+.pv-collection {padding-bottom:30px}
+@media(max-width:650px) {
+ .pv-simple[data-design=noesis] .pv-hero h1 {font-size:39px;line-height:1.2}
+ .pv-simple[data-design=noesis] :is(.pv-collection h2,.pv-method h2) {font-size:26px}
+ .pv-simple[data-design=noesis] .pv-record h3 {font-size:18px}
+ .pv-simple[data-design=noesis] #dialog .result-title {font-size:24px}
+ .pv-record-grid {grid-template-columns:1fr;gap:12px}
+ .pv-record {padding:22px}
+ .pv-result-range>span:last-child {display:none}
+ .pv-pager {gap:8px;flex-wrap:wrap}
+ .pv-pager label {order:-1;flex-basis:100%;justify-content:center;margin-bottom:5px}
+ .pv-pager button {font-size:11px;padding-inline:16px;flex:1}
+}
+
+/* Every Simple proposal dialog owns a complete light palette. In particular,
+   Gaia's dark source card must not inherit into this white modal. */
+.pv-simple #dialog {
+ --ink:#172e40;--muted:#435363;--paper:#fff;--accent:#173b57;--line:#ccd5dc;
+ color:var(--ink);background:var(--paper);color-scheme:light;
+}
+.pv-simple #dialog .evidence-record {
+ --muted:#435363;background:#f2f5f7;color:var(--ink);border-color:var(--line);
+}
+.pv-simple #dialog :is(.evidence-coordinates,.evidence-coordinates a,.evidence-sources a,.ex-facts a,.ex-evidence-grid a,.location-verification a) {
+ color:#174d70;text-decoration:underline;text-underline-offset:3px;
+}
+.pv-simple #dialog .location-verification {background:#e8eff3;border-color:#7691a4;color:#173b57}
+.pv-simple #dialog .location-verification :is(strong,p,span,small,a) {color:#173b57;opacity:1}
+.pv-simple #dialog :is(.ex-caption,.ex-card-hint,.ex-evidence-grid b,.ex-evidence-grid small,.ex-facts dt,.ex-life-grid small,.ex-form label small,.ex-review-head small,.ex-history time,.ex-case small,.ex-public-summaries article>small,.ex-dimensions span,.ex-dimensions span small,.ex-section-head>span,.ex-progress-track span) {
+ color:var(--muted);opacity:1;
+}
+.pv-simple #dialog .ex-progress-track .ex-current {color:var(--ink);background:#e8eff3}
+.pv-simple #dialog :is(.ex-form input,.ex-form textarea)::placeholder {color:#586777;opacity:1}
+.pv-simple #dialog .pv-tabs {background:#e9eef2}
+.pv-simple #dialog .pv-tabs [aria-selected=true] {color:#fff;background:#173b57}
+.pv-simple #dialog :is(.pv-truth,.pv-dossier-foot,.pv-brief-intro>small,.pv-kicker) {font-size:11px}
+.pv-simple #dialog .context-line span {color:#435363;background:#edf2f4}
+
+/* Phones, Simple mode: Gaia's map inside the place card, under «Ο τόπος σου. Από κοντά.» (ui-preview.js placeGaiaMap). */
+.pv-simple .pv-gaia-stack {display:block}
+.pv-simple .pv-gaia-stack>* {grid-column:1/-1}
+.pv-simple .pv-gaia-stack>#gaia-place {padding:0;margin:0;background:none;border:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;max-height:none;overflow:visible}
+.pv-simple .pv-gaia-stack>#gaia-place>.overline,.pv-simple .pv-gaia-stack>#gaia-place>h1 {display:none}
+.pv-simple .pv-gaia-head h1 {margin-bottom:0}
+.pv-simple .pv-gaia-map {position:relative;height:min(78vw,330px);margin:20px 0 22px;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.pv-simple .pv-gaia-map #citizen-map {position:absolute;inset:0;width:100%;height:100%;border-radius:inherit}
+.pv-simple .pv-gaia-map .map-buttons {top:10px;right:10px;bottom:auto;left:auto}
+.pv-simple .pv-gaia-map .gaia-map-note {left:12px;right:12px;bottom:10px;top:auto}
+
+/* Simple, wider screens (owner, 23 October 2026). From the bottom of the map up: the «Η μεγάλη εικόνα» bar, then
+   the map buttons (+ −), the scale and the OpenFreeMap credit above it, and the source note at the right.
+   Nothing may sit under the section dock: the map always leaves a 56px strip for it (line 17's height plus this
+   margin), so its minimum height drops from 690px to 440px (fits windows down to 576px tall); the two cards
+   scroll inside. Bar ≈ 70px tall. */
+@media (min-width:901px) {
+  .pv-simple[data-design=gaia] .gaia-main {min-height:440px;margin-bottom:56px}
+  .pv-simple .gaia-main>.gaia-bottom {bottom:14px}
+  .pv-simple .gaia-main>.map-buttons {bottom:96px}
+  .pv-simple .gaia-main .maplibregl-ctrl-bottom-left {bottom:92px}
+  .pv-simple .gaia-main>.gaia-map-note {bottom:100px;left:auto;right:28px}
+}
+
+/* Authorship line in both footers, and a fingerprint that survives comment stripping. */
+:root{--ano-politeia:"© 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ"}
+.footer-copy{display:block;margin-top:6px;font-size:11px;letter-spacing:.02em;opacity:.75}
+.footer-copy a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+
+/* AI research draft notice (editions whose country.json has contentNotice). */
+.pv-draft-pill {position:fixed;z-index:60;left:50%;top:10px;transform:translateX(-50%);max-width:min(560px,calc(100vw - 260px));margin:0;padding:6px 14px;border-radius:999px;background:#fff4d6;color:#5b4310;border:1px solid #e3c477;font:600 12px/1.4 Inter,Manrope,sans-serif;text-align:center;box-shadow:0 2px 10px #0000001a}
+@media (max-width:900px) {.pv-draft-pill {top:auto;bottom:76px;max-width:calc(100vw - 32px)}}
+.footer-federation {margin-left:14px;font-weight:600}
+.kyma-footer .footer-federation {display:block;margin:6px 0 0}
+.pv-draft-note {margin:0 0 14px;padding:10px 14px;border-radius:10px;background:#fff4d6;color:#5b4310;border:1px solid #e3c477;font-size:13px}

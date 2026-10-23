@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="edition-title">
+  <!-- Placeholder mark for a new edition: replace it with your own. Not the Δωδεκάπλευρο (COPYRIGHT.md §3). -->
+  <title id="edition-title">Edition mark (placeholder)</title>
+  <g id="edition-mark" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="50" cy="50" r="36"/>
+    <path d="M14 50h72M50 14c-13 11-13 61 0 72M50 14c13 11 13 61 0 72" opacity=".5"/>
+    <circle cx="50" cy="50" r="5"/>
+  </g>
+</svg>

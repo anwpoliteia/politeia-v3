@@ -1,0 +1,31 @@
+/*! © 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ · ipoliteia.gr · SPDX-License-Identifier: AGPL-3.0-or-later · Κείμενα: CC BY-NC-ND 4.0 · Όνομα και Δωδεκάπλευρο: με επιφύλαξη παντός δικαιώματος · βλ. /COPYRIGHT.md */
+.attica-minimap{position:absolute;left:35px;bottom:75px;z-index:4;width:288px;padding:11px;border-radius:19px;background:linear-gradient(145deg,#213d40e8,#122b30ed);border-color:#d4c29638;box-shadow:0 15px 40px #071c2638}
+.attica-map-heading{display:flex;align-items:center;gap:9px;height:24px;padding:0 3px 5px;font-size:9px;letter-spacing:.18em;color:#e2cca1}
+.attica-north{margin-left:auto;font-size:8px;letter-spacing:.03em;color:#bcc9b8}
+.attica-map-toggle{display:grid;place-items:center;width:26px;height:26px;font-size:17px;border-radius:50%;color:#d8c39a;padding:0;letter-spacing:0}
+.attica-map-toggle:hover{background:#dbcfaa15}.attica-map-toggle:focus-visible{outline:2px solid #e6d1a4;outline-offset:1px}
+.attica-map-drawing svg{display:block;width:100%;height:auto;border-radius:10px;overflow:hidden;cursor:crosshair;user-select:none;-webkit-user-select:none}
+.attica-map-coverage{fill:#ecd7a80b;stroke:#ecd7a8;stroke-width:1;stroke-dasharray:3 2;pointer-events:none}
+.attica-map-hint{margin:8px 3px 0;font-size:9px;line-height:1.4;color:#cfc5a8}.attica-map-touch-hint{display:none}
+@media(pointer:coarse){.attica-map-mouse-hint{display:none}.attica-map-touch-hint{display:inline}}
+.attica-map-water{fill:#173941}.attica-map-context{fill:#355252;stroke:#60807a;stroke-width:.65}.attica-map-land{fill:#657b67;stroke:#b5b89b;stroke-width:.8;stroke-linejoin:round}
+.attica-map-places circle{fill:#d2d2b0;stroke:#334e46;stroke-width:.5}.attica-map-places text{font:9px Arial,sans-serif;fill:#efe5c8;paint-order:stroke;stroke:#294642;stroke-width:2.5px;stroke-linejoin:round}
+.attica-map-scale path{fill:none;stroke:#93aaa2;stroke-width:.8}.attica-map-scale text{font:8px Arial,sans-serif;fill:#a7beb3}
+.attica-map-cone{fill:#f4d48a;opacity:.23}.attica-map-halo{fill:#fae2a8;opacity:.2}.attica-map-position{fill:#fff2c8;stroke:#142f35;stroke-width:1.5}.attica-map-marker.is-outside{opacity:.5}
+.attica-map-caption{display:flex;align-items:center;gap:6px;padding:9px 3px 4px;font-size:9px;color:#e0d5b9}.attica-map-dot{width:5px;height:5px;border-radius:50%;background:#e9d2a2;box-shadow:0 0 7px #e9d2a239}
+.attica-map-credit{display:block;font-size:7px;color:#9caf9f;padding-left:3px;letter-spacing:.025em;line-height:1.4}
+.attica-minimap.is-collapsed{padding-block:8px}.attica-minimap [hidden]{display:none!important}
+.has-attica-map .side-panel{max-height:calc(100dvh - 500px)}
+.has-attica-map.attica-map-collapsed .side-panel{max-height:calc(100dvh - 240px)}
+.has-attica-map .touch-pad{left:341px}
+@media(max-width:1100px) and (min-width:761px){.attica-minimap{left:24px;width:254px}.has-attica-map .side-panel{max-height:calc(100dvh - 480px)}.has-attica-map .touch-pad{left:296px}}
+@media(max-width:760px){
+  .attica-minimap{left:18px;bottom:252px;width:221px;padding:8px;border-radius:15px}
+  .attica-map-heading{height:21px;font-size:8px}.attica-map-caption{font-size:8px;padding-top:6px}.attica-map-credit{font-size:6px}
+  .has-attica-map .side-panel{max-height:calc(100dvh - 580px)}
+  .has-attica-map.attica-map-collapsed .side-panel{max-height:calc(100dvh - 390px)}
+  .has-attica-map .touch-pad{left:auto;right:18px}
+  .has-attica-map .walk-hint{left:251px;right:16px;bottom:259px;padding:10px;max-width:none}
+  .driving .attica-minimap{bottom:345px}
+}
+@media(max-height:600px) and (min-width:761px){.attica-minimap{bottom:45px}.has-attica-map .side-panel{max-height:calc(100dvh - 460px)}}

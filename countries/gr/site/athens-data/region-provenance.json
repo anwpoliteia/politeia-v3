@@ -1,0 +1,403 @@
+{
+ "dataset": "Wider Athens region for Politeia: Piraeus, Vouliagmeni, central Athens extension, basin blocks and relief",
+ "attribution": "© OpenStreetMap contributors",
+ "license": "ODbL-1.0",
+ "licenseUrl": "https://www.openstreetmap.org/copyright",
+ "databaseLicenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+ "builtAt": "2026-10-14T17:17:54.328230+00:00",
+ "projection": "Same local metres as athens.json: origin 23.735 E, 37.975 N; x east, z north.",
+ "detailedAreas": [
+  {
+   "id": "athens-plus",
+   "title": "Αθήνα · βόρεια και ανατολικά του κέντρου",
+   "file": "area-athens-plus.json",
+   "rects": [
+    {
+     "xMin": -1842.77,
+     "xMax": 2369.27,
+     "zMin": 1224.51,
+     "zMax": 2449.03
+    },
+    {
+     "xMin": 1316.26,
+     "xMax": 2369.27,
+     "zMin": -1669.79,
+     "zMax": 1224.51
+    }
+   ],
+   "stats": {
+    "buildings": 16188,
+    "buildingParts": 12,
+    "roads": 3810,
+    "parks": 273,
+    "landmarks": 46,
+    "heightSources": {
+     "osm-levels-inferred": 334,
+     "osm-height": 745,
+     "default-inferred": 15108,
+     "published": 1
+    },
+    "roofShapes": {
+     "flat": 16141,
+     "gabled": 42,
+     "hipped": 5
+    },
+    "skipped": {
+     "relations-without-closed-rings": 2,
+     "tiny-or-outside-buildings": 68,
+     "non-surface-roads": 19
+    }
+   }
+  },
+  {
+   "id": "piraeus",
+   "title": "Πειραιάς",
+   "file": "area-piraeus.json",
+   "rects": [
+    {
+     "xMin": -10793.35,
+     "xMax": -5528.3,
+     "zMin": -5232.02,
+     "zMax": -1892.43
+    }
+   ],
+   "stats": {
+    "buildings": 15534,
+    "buildingParts": 447,
+    "roads": 5052,
+    "parks": 769,
+    "landmarks": 41,
+    "heightSources": {
+     "default-inferred": 6854,
+     "osm-levels-inferred": 8475,
+     "osm-height": 202,
+     "parent-height": 3
+    },
+    "roofShapes": {
+     "flat": 15338,
+     "gabled": 80,
+     "dome": 22,
+     "pyramidal": 19,
+     "hipped": 4,
+     "skillion": 71
+    },
+    "skipped": {
+     "tiny-or-outside-buildings": 16,
+     "tiny-or-outside-parts": 3,
+     "non-surface-roads": 36
+    }
+   }
+  },
+  {
+   "id": "vouliagmeni",
+   "title": "Βουλιαγμένη",
+   "file": "area-vouliagmeni.json",
+   "rects": [
+    {
+     "xMin": 2369.27,
+     "xMax": 5703.81,
+     "zMin": -19703.55,
+     "zMax": -16141.33
+    }
+   ],
+   "stats": {
+    "buildings": 654,
+    "buildingParts": 2,
+    "roads": 866,
+    "parks": 107,
+    "landmarks": 5,
+    "heightSources": {
+     "default-inferred": 647,
+     "osm-levels-inferred": 1,
+     "osm-height": 6
+    },
+    "roofShapes": {
+     "flat": 654
+    },
+    "skipped": {
+     "tiny-or-outside-buildings": 1,
+     "non-surface-roads": 2
+    }
+   }
+  },
+  {
+   "id": "elliniko",
+   "title": "Ελληνικό",
+   "file": "area-elliniko.json",
+   "rects": [
+    {
+     "xMin": -1755.02,
+     "xMax": 2193.77,
+     "zMin": -11465.91,
+     "zMax": -8126.32
+    }
+   ],
+   "stats": {
+    "buildings": 5819,
+    "buildingParts": 7,
+    "roads": 1402,
+    "parks": 208,
+    "landmarks": 15,
+    "heightSources": {
+     "default-inferred": 5760,
+     "osm-levels-inferred": 55,
+     "osm-height": 4
+    },
+    "roofShapes": {
+     "flat": 5814,
+     "gabled": 5
+    },
+    "skipped": {
+     "ways-drawn-by-their-relation": 1,
+     "tiny-or-outside-buildings": 9,
+     "non-surface-roads": 21
+    }
+   }
+  },
+  {
+   "id": "faliro",
+   "title": "Φάληρο · Κέντρο Πολιτισμού Ίδρυμα Σταύρος Νιάρχος",
+   "file": "area-faliro.json",
+   "rects": [
+    {
+     "xMin": -5177.3,
+     "xMax": -2632.53,
+     "zMin": -5232.02,
+     "zMax": -3005.63
+    }
+   ],
+   "stats": {
+    "buildings": 5474,
+    "buildingParts": 3,
+    "roads": 1880,
+    "parks": 263,
+    "landmarks": 20,
+    "heightSources": {
+     "default-inferred": 5194,
+     "osm-levels-inferred": 269,
+     "osm-height": 10,
+     "parent-height": 1
+    },
+    "roofShapes": {
+     "flat": 5472,
+     "gabled": 1,
+     "dome": 1
+    },
+    "skipped": {
+     "tiny-or-outside-buildings": 17,
+     "non-surface-roads": 32
+    }
+   }
+  },
+  {
+   "id": "oaka",
+   "title": "ΟΑΚΑ · Ολυμπιακό Αθλητικό Κέντρο",
+   "file": "area-oaka.json",
+   "rects": [
+    {
+     "xMin": 3510.03,
+     "xMax": 5528.3,
+     "zMin": 5899.93,
+     "zMax": 7792.36
+    }
+   ],
+   "stats": {
+    "buildings": 2428,
+    "buildingParts": 0,
+    "roads": 1384,
+    "parks": 203,
+    "landmarks": 12,
+    "heightSources": {
+     "default-inferred": 2365,
+     "osm-levels-inferred": 63
+    },
+    "roofShapes": {
+     "flat": 2425,
+     "gabled": 3
+    },
+    "skipped": {
+     "tiny-or-outside-buildings": 10,
+     "non-surface-roads": 32
+    }
+   }
+  }
+ ],
+ "detailedAreaSources": {
+  "source": {
+   "file": "greece-261013.osm.pbf",
+   "url": "https://download.geofabrik.de/europe/greece-261013.osm.pbf",
+   "bytes": 341893773,
+   "md5File": "greece-261013.osm.pbf.md5",
+   "databaseTimestamp": "2026-10-13T20:21:31Z",
+   "extractedAt": "2026-10-14T17:03:18.422645+00:00",
+   "why": "Public Overpass mirrors were overloaded on 14 Oct 2026; the same OSM data was read from the Geofabrik extract."
+  },
+  "athens-north": {
+   "file": "osm-athens-north.json",
+   "bytes": 4995647,
+   "sha256": "29eeacc3893145023e7a448001619c681850ad34550ed56b6860ec6a5e4f555e",
+   "elements": 13257
+  },
+  "athens-north-relations": {
+   "file": "osm-athens-north-relations.json",
+   "bytes": 58448,
+   "sha256": "831f0eaa963cda9ecef4080743a0c7fffb01673a49844a952ffc22c6c7075e20",
+   "elements": 48
+  },
+  "athens-east": {
+   "file": "osm-athens-east.json",
+   "bytes": 2711502,
+   "sha256": "f1968e9ad3c8e0a89b7015029dadb8feb5a0cc59e49560e9a015d8b40a02379c",
+   "elements": 7042
+  },
+  "athens-east-relations": {
+   "file": "osm-athens-east-relations.json",
+   "bytes": 26822,
+   "sha256": "5636bd96dcc4fd74008c41cb7182322c6a688e639a2f343d7a06501a2bd0f604",
+   "elements": 25
+  },
+  "piraeus": {
+   "file": "osm-piraeus.json",
+   "bytes": 9438921,
+   "sha256": "4983ed040efda425e7a921dd6628180f0ed14e7f4c5394c1cc3d2466cf613170",
+   "elements": 21461
+  },
+  "piraeus-relations": {
+   "file": "osm-piraeus-relations.json",
+   "bytes": 174024,
+   "sha256": "9a78ddaefb00683ec1f8d94ba78885d9bdee5e8c3c8b61851ac1765650781f82",
+   "elements": 54
+  },
+  "vouliagmeni": {
+   "file": "osm-vouliagmeni.json",
+   "bytes": 675372,
+   "sha256": "bcb7114c6944bb113847b29586d0a5f389d7edc537d397f6506d1286468f7d94",
+   "elements": 1630
+  },
+  "vouliagmeni-relations": {
+   "file": "osm-vouliagmeni-relations.json",
+   "bytes": 188,
+   "sha256": "df81329fa96d135a71474afc9f4a0f3e31374844ac6642a14ca07a72b54231e9",
+   "elements": 0
+  },
+  "elliniko": {
+   "file": "osm-elliniko.json",
+   "bytes": 2885312,
+   "sha256": "ecfd6da28ddafd133ea2add08caa5c14087d3b55dbbc36f21c419315275db5eb",
+   "elements": 7455
+  },
+  "elliniko-relations": {
+   "file": "osm-elliniko-relations.json",
+   "bytes": 6184,
+   "sha256": "9173a990ba9b8af51b8bb4f0731ea8af74d3881064fe13ae3e0403ba74073eaf",
+   "elements": 6
+  },
+  "faliro": {
+   "file": "osm-faliro.json",
+   "bytes": 2688429,
+   "sha256": "58ae46b7d610ed6d76c9549beb0bf7fb4500103ce743ea2348ca5ccf0f941590",
+   "elements": 7658
+  },
+  "faliro-relations": {
+   "file": "osm-faliro-relations.json",
+   "bytes": 21835,
+   "sha256": "b4c35d0b9b62558bf3aff7e00b41a8fe60ba629ecf87a8620026a32ce1d5635c",
+   "elements": 11
+  },
+  "oaka": {
+   "file": "osm-oaka.json",
+   "bytes": 1511515,
+   "sha256": "ca74756b2683ff04309246f790b76c14d917a11d7ca5197c07ba172065178b2e",
+   "elements": 4041
+  },
+  "oaka-relations": {
+   "file": "osm-oaka-relations.json",
+   "bytes": 56133,
+   "sha256": "731b00f061f496188d023c4d7a521b65289cf4fa759e8db86ef5fe669f9d52db",
+   "elements": 34
+  },
+  "basin": {
+   "file": "tile-geofabrik.json",
+   "bytes": 151135629,
+   "sha256": "10d65ed9914f512677e6316a4c72d6aeec1974a67fa97cad78f494d7dc5fe22f",
+   "elements": 354069
+  },
+  "sports": {
+   "file": "osm-sports.json",
+   "bytes": 1046027,
+   "sha256": "5d1774fcfc40913c054f674ebbe1b51845a5af8a8e181562530a7f3fba8bcc62",
+   "elements": 2951
+  },
+  "region": [
+   37.79,
+   23.58,
+   38.06,
+   23.86
+  ]
+ },
+ "detailedAreaModel": "Identical to athens.json (research/athens-unity-data/convert.py): Simple 3D Buildings parts, courtyards, roof shapes, colours, labelled height sources. Stored as schemaVersion 3 (flat point arrays at 0.1 m, flat caps triangulated in the browser) and expanded to schema 2 on load.",
+ "basinBlocks": {
+  "buildings": 296305,
+  "bytes": 6057471,
+  "heightSources": {
+   "default-inferred": 290385,
+   "osm-levels-inferred": 4436,
+   "osm-height": 1484
+  },
+  "skipped": {
+   "in-a-detailed-area": 57230,
+   "drawn-by-a-stadium-model": 50,
+   "ways-drawn-by-their-relation": 7,
+   "tiny": 469
+  },
+  "heightRule": "OSM height, else building:levels x 3 m, else placeholder by type and footprint (12 m >= 120 m2, 9 m >= 50 m2, 6 m smaller; 3 m garages/sheds; 8 m religious).",
+  "osmDatabaseTimestamp": [
+   "2026-10-13T20:21:31Z"
+  ],
+  "tileSize": 2000.0
+ },
+ "basinSource": null,
+ "stadiums": {
+  "count": 67,
+  "types": {
+   "bowl": 52,
+   "stands": 4,
+   "indoor": 11
+  },
+  "rules": "Parametric models on OSM stadium outlines (convert-stadiums.py). Heights OSM, published or labelled estimate; OSM buildings inside a bowl or arena are replaced by the model."
+ },
+ "landmarkModels": "Simplified SNFCC (canopy, Lighthouse) and Ellinikon East Terminal models in the lab (landmarks-region.js), from published descriptions; Athens Tower height 103 m published.",
+ "relief": {
+  "file": "region-terrain.bin",
+  "cols": 815,
+  "rows": 998,
+  "spacing": 30.0,
+  "xMin": -13530.0,
+  "zMin": -20520.0,
+  "lonLat": [
+   23.58,
+   37.79,
+   23.86,
+   38.06
+  ],
+  "min": -3.8,
+  "max": 1015.0,
+  "source": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+  "zoom": 14,
+  "tiles": 208,
+  "retrievedAt": "2026-10-14T13:59:49.649444+00:00",
+  "sha256": "e01b09e232c72be936a54d7421cc45e8bb760a5a97e4d01111f3014670c3fc2a",
+  "attribution": "Υψόμετρα: Mapzen Terrain Tiles (AWS Open Data) · EU-DEM, Copernicus · SRTM, USGS",
+  "limitations": [
+   "About 30 m source resolution; a surface model, so dense blocks and trees can lift the ground slightly; one 3x3 smoothing pass.",
+   "Sea depths are the source bathymetry; the renderer draws the sea surface at 0 m and the coastline where the relief crosses it."
+  ]
+ },
+ "limitations": [
+  "Detailed areas are rectangles around Piraeus, Vouliagmeni and north/east of the centre; they are OSM volumes, not photogrammetry.",
+  "Basin blocks are plain prisms on real OSM outlines. Heights are OSM height, building:levels x 3 m, or labelled placeholders by type and footprint size; they are conceptual masses, not a measured skyline.",
+  "Blocks are drawn only within a few kilometres of the view; the relief and sea are drawn everywhere in the region.",
+  "The relief is a ~30 m surface model; the sea surface is drawn at 0 m and the coastline where the relief crosses it. The region edges slope gently into the sea.",
+  "OSM database timestamps differ between requests and mirrors; each is recorded as reported."
+ ]
+}

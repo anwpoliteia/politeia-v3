@@ -1,0 +1,18 @@
+/*! © 2026 ΑΝΩ ΠΟΛΙΤΕΙΑ · ipoliteia.gr · SPDX-License-Identifier: AGPL-3.0-or-later · Κείμενα: CC BY-NC-ND 4.0 · Όνομα και Δωδεκάπλευρο: με επιφύλαξη παντός δικαιώματος · βλ. /COPYRIGHT.md */
+/* A second, translucent doorway into the Athens city experiment. */
+.gaia-enter-city {
+  grid-column:1 / -1; display:flex; align-items:center; gap:11px;
+  width:100%; min-height:66px; padding:13px 12px; margin:-5px 0 18px;
+  border:1px solid #d8c48b66; border-radius:12px;
+  background:linear-gradient(115deg,#d8c48b13,#afced509);
+  box-shadow:inset 0 1px 0 #f7edcc0c; backdrop-filter:blur(16px);
+  color:#eee2bc; transition:background .2s,border-color .2s,transform .2s;
+}
+.gaia-enter-city:hover { background:linear-gradient(115deg,#d8c48b26,#afced515); border-color:#e6d7a9a6; transform:translateY(-1px); }
+.gaia-enter-icon { width:28px; height:28px; flex:0 0 28px; }
+.gaia-enter-icon svg { display:block; width:100%; height:100%; }
+.gaia-enter-icon g { stroke-width:2.5; }
+.gaia-enter-city strong { display:block; font-size:13px; font-weight:600; line-height:1.4; }
+.gaia-enter-city small { display:block; font-size:9px; line-height:1.5; color:#adc2c9; margin-top:4px; }
+.gaia-enter-arrow { margin-left:auto; font-size:19px; color:#cbbb8f; }
+@media(prefers-reduced-motion:reduce) { .gaia-enter-city { transition:none; } .gaia-enter-city:hover { transform:none; } }

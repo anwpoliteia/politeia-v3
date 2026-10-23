@@ -1,0 +1,77 @@
+{
+  "dataset": "Central Athens OpenStreetMap geometry for Politeia",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL-1.0",
+  "licenseUrl": "https://www.openstreetmap.org/copyright",
+  "databaseLicenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "sourceEndpoint": "https://overpass.kumi.systems/api/interpreter",
+  "retrievedAt": "2026-10-12T09:42:09.545896+00:00",
+  "osmDatabaseTimestamp": "2026-07-24T11:04:51Z",
+  "sourceSha256": "f465823237457cadb36e07e2463fd430833e7a6541c2437642a1c3fd7ba3c4ae",
+  "relationsSource": {
+    "file": "osm-central-athens-relations.json",
+    "endpoint": "https://overpass.kumi.systems/api/interpreter",
+    "retrievedAt": "2026-10-12T15:18:07.438926+00:00",
+    "osmDatabaseTimestamp": "2026-06-01T08:52:28Z",
+    "sha256": "d9247de26fc12b3ad3bf8b1a4a423e79bd4edbc74e7815e58842c52073d9ff17",
+    "query": "query-relations.overpassql"
+  },
+  "bbox": [
+    23.718,
+    37.964,
+    23.75,
+    37.986
+  ],
+  "origin": [
+    23.735,
+    37.975
+  ],
+  "projection": "Local equirectangular: x=(lon-originLon)*pi/180*6378137*cos(originLat); z=(lat-originLat)*pi/180*6378137; metres; east +x, north +z. Building heights are above each building's own ground; relief is in terrain.json.",
+  "buildingModel": "OpenStreetMap Simple 3D Buildings: building:part ways and relations with their own height, min_height, roof:shape/height/direction and colours. An outline at least half covered by its parts (or listed as the outline of a type=building relation) is drawn by its parts only. Courtyards are multipolygon inner rings. cap = triangle indices over points followed by each hole; roof.points y = metres above the building ground; wallTops = per-point wall height where a roof slopes.",
+  "limitations": [
+    "Central district sample, not a complete or photorealistic copy of Athens.",
+    "OSM footprint locations are real source geometry. Heights are tagged (height), inferred from building:levels at 3 m per level, inherited by a part from its tagged building, or explicit 12/6/3 m placeholder defaults; heightSource records which.",
+    "Roofs are drawn as flat, skillion, gabled (also used for round, gambrel and saltbox), hipped (four-sided convex footprints; others gabled), pyramidal/cone or dome/onion. Other shapes, sloping roofs over courtyards, skillions without roof:direction and footprints a gable ridge crosses more than twice are drawn flat. Untagged roof heights default to 3 m (domes: the footprint radius).",
+    "Colours are the mapped building:colour and roof:colour values; untagged buildings use the renderer palette. No facade textures, windows, interiors or architectural detail beyond the mapped parts.",
+    "Road widths use tagged widths, 3 m per lane, or class-based placeholder defaults; bridges are flattened and tunnels excluded.",
+    "Building relations come from a second extract whose server reported an older database snapshot (see relationsSource); their ways and the main extract can differ where they were edited between the two snapshots.",
+    "Landmark polygon positions are a vertex mean, not a verified entrance or safe walking spawn.",
+    "The acquisition source reports an OSM database timestamp earlier than the retrieval date; this is recorded without altering it."
+  ],
+  "stats": {
+    "buildings": 16557,
+    "buildingParts": 5080,
+    "buildingsWithCourtyards": 68,
+    "buildingsWithColour": 4799,
+    "roads": 4278,
+    "parks": 359,
+    "landmarks": 136,
+    "heightSources": {
+      "osm-levels-inferred": 1045,
+      "default-inferred": 10038,
+      "osm-height": 5472,
+      "parent-height": 2
+    },
+    "roofShapes": {
+      "flat": 15779,
+      "gabled": 620,
+      "pyramidal": 11,
+      "hipped": 7,
+      "skillion": 153,
+      "dome": 18
+    },
+    "geometryNotes": {
+      "outlines-drawn-by-their-parts": 31,
+      "roofs-flattened-no-direction": 19,
+      "roofs-flattened-complex-footprint": 2
+    },
+    "skipped": {
+      "relations-without-closed-rings": 6,
+      "ways-drawn-by-their-relation": 3,
+      "relations-in-first-extract-without-members": 7,
+      "tiny-or-outside-buildings": 133,
+      "tiny-or-outside-parts": 773,
+      "non-surface-roads": 37
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source": "vendor/politeia-v-dist.zip",
+  "sha256": "eaf5f2cce163436816f60ca85855b94d47c30af3ff05bccf6267b0649d179061",
+  "files": 75,
+  "mount": "citizen.html?design=noesis",
+  "changes": [
+    "Relative entry assets and KaTeX fonts",
+    "Relative canon and NOUS embedded assets",
+    "Hash route history for static hosting",
+    "Imported menu breakpoint for medium desktop widths",
+    "NOUS 2.0 frame given its own origin (opaque-origin frames are blocked by some browsers and blockers); d3 and three.js pinned with SRI",
+    "Five-stages animation beside the Ευδαιμονία equation on /manifesto (stages-hero.js + stages-hero.css, linked from index.html; the bundle is untouched)",
+    "ΔΑΙΔΑΛΟΣ comparison and real energy per GPU generation below the /cost calculator (cost-daidalos.js + cost-daidalos.css; the bundle is untouched)",
+    "Landing hero: the Soul may draw below its frame on wide screens (bundle patched in its resize() only: geometry measured from the frame, canvas taller; soul-bleed.css). Approved by the owner 21/10/2026; same change in Politeia-V src (SoulOfLight.tsx, Landing.tsx, index.css)"
+  ]
+}
